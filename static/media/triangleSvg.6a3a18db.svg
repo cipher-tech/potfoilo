@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="81" height="64" viewBox="0 0 81 64">
+  <g id="triangleSvg" transform="translate(-1815 -173)">
+    <g id="Polygon_1" data-name="Polygon 1" transform="translate(1815 173)" fill="none">
+      <path d="M29.5,0,59,54H0Z" stroke="none"/>
+      <path d="M 29.5 10.42924499511719 L 8.428939819335938 49 L 50.57106018066406 49 L 29.5 10.42924499511719 M 29.5 0 L 59 54 L 0 54 L 29.5 0 Z" stroke="none" fill="#2f89fc"/>
+    </g>
+    <g id="Polygon_2" data-name="Polygon 2" transform="translate(1837 183)" fill="rgba(255,255,255,0.01)">
+      <path d="M 56.47131729125977 52.5 L 2.528682470321655 52.5 L 29.5 3.128774642944336 L 56.47131729125977 52.5 Z" stroke="none"/>
+      <path d="M 29.5 6.257530212402344 L 5.057353973388672 51 L 53.94264602661133 51 L 29.5 6.257530212402344 M 29.5 0 L 59 54 L 0 54 L 29.5 0 Z" stroke="none" fill="#30e3ca"/>
+    </g>
+  </g>
+</svg>
