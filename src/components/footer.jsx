@@ -23,8 +23,8 @@ function Footer() {
         <Container
             data-aos="fade-right"
             data-aos-offset="0"
-            data-aos-delay="800"
-            data-aos-duration="800"
+            data-aos-delay="300"
+            data-aos-duration="300"
             data-aos-easing="ease-in-out"
             data-aos-once="true">
             <p className="footer">

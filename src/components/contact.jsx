@@ -40,15 +40,18 @@ let Container = styled.div`
         border: 2px solid ${props => props.theme.colorLight};
         padding: 1rem 4rem;
         border-radius: 2rem;
+        color: ${props => props.theme.colorLight};
+        cursor: pointer;
+        text-decoration: none;
     }
 `
 function Contacts() {
     return (
         <Container
             data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="600"
-            data-aos-duration="800"
+            data-aos-offset="100"
+            data-aos-delay="300"
+            data-aos-duration="400"
             data-aos-easing="ease-in-out"
             data-aos-once="true">
             <div className="stats">
@@ -76,9 +79,9 @@ function Contacts() {
             <div className="message">
                 LET'S WORK TOGETHER!
             </div>
-            <div className="hireButton">
+            <a href="mailto:nickchibuikem@gmail.com" className="hireButton">
                 Hire me
-            </div>
+            </a>
         </Container>
     )
 }

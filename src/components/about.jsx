@@ -202,10 +202,7 @@ let Container = styled.div`
         }
 
         &-icons{
-            
-            
             width: auto;
-
             img{
                 height: 3rem;
                 cursor: pointer;
@@ -218,7 +215,6 @@ let Container = styled.div`
     }
     .CVDownload{
         display: flex;
-        
         justify-content: center;
         border-radius: 1rem;
         align-content: center;
@@ -227,11 +223,12 @@ let Container = styled.div`
         border: none;
         cursor: pointer;
         justify-self: center;
-        width: 17rem;
+        /* width: 17rem; */
         padding: 1rem 2rem;
         font-size: 2rem;
         background: ${props => props.theme.colorPrimary};
         color: ${props => props.theme.colorLight};
+        text-decoration: none;
         @media only screen and (max-width: ${props => props.theme.breakPoints.bpxLarge}) {
             justify-self: flex-end;
             margin: 1rem 3rem;
@@ -270,37 +267,37 @@ function About(props) {
                     data-aos-once="true" />
             </div>
             <div className="aboutMeTxt"
-                    data-aos="fade-up"
-                    data-aos-offset="90"
-                    data-aos-delay="600"
-                    data-aos-duration="800"
-                    data-aos-easing="ease-in-out"
-                    data-aos-once="true">
+                data-aos="fade-up"
+                data-aos-offset="90"
+                data-aos-delay="600"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true">
                 <p className="aboutMeTxt-title">Chibuikem Onubogu</p>
                 <p className="aboutMeTxt-sub">
                     Programmer & Web Developer
                     Based In Nigeria
                 </p>
                 <p className="aboutMeTxt-main">
-                I am a skilled programmer that likes writing modular codes that are easily 
-                maintainable and supports continuous integration. 
-                I'm skilled in the art of translating design mock-ups and prototypes 
-                in tools like figma and adobeXD into responsive full fledged iweb apps. 
-                I currently work at rapport tech as a front-end engineer, working on different 
-                projects. In my spare time I work on my personal projects and study to get better.
-                My hobbies include hanging out with friends, watching movies and playing video games.
-                    <br/>
+                    I am a skilled programmer that likes writing modular codes that are easily
+                    maintainable and supports continuous integration.
+                    I'm skilled in the art of translating design mock-ups and prototypes
+                    in tools like figma and adobeXD into responsive full fledged iweb apps.
+                    I currently work at rapport tech as a front-end engineer, working on different
+                    projects. In my spare time I work on my personal projects and study to get better.
+                    My hobbies include hanging out with friends, watching movies and playing video games.
+                    <br />
                     <span className="aboutMeTxt-main--stack">
-                        My tech stack:  <img src={devStackSvg} alt="devStack svg"/>
+                        My tech stack:  <img src={devStackSvg} alt="devStack svg" />
                     </span>
                 </p>
                 <ul className="aboutMeTxt-info">
                     <li className="aboutMeTxt-info--items">
                         E-mail: nickchibuikem@gmail.com
                     </li>
-                    <li className="aboutMeTxt-info--items">
+                    {/* <li className="aboutMeTxt-info--items">
                         Birthday: 29th April 1998
-                    </li>
+                    </li> */}
                     <li className="aboutMeTxt-info--items">
                         Phone: 08066060467
                     </li>
@@ -308,56 +305,56 @@ function About(props) {
                         Freelance: Avaliable
                     </li>
                     <li className="aboutMeTxt-info--items">
-                        experience: 3 years
+                        experience: 4 years
                     </li>
                     <li className="aboutMeTxt-info--items">
-                        Residence:  Anambra state, Nigeria
-
+                        Location: Nigeria
                     </li>
                 </ul>
 
             </div>
             <div className="moreInfo">
                 <ul className="aboutMeSocial"
-                data-aos="fade-right"
+                    data-aos="fade-right"
                     data-aos-offset="90"
                     data-aos-delay="600"
                     data-aos-duration="600"
                     data-aos-easing="ease-in-out"
                     data-aos-once="true">
                     <li className="aboutMeSocial-icons">
-                       <a href="/">
-                           <img src={twitterSvg} alt="twitterSvg" />
-                       </a>
+                        <a href="https://twitter.com/Chibuikem_Nick">
+                            <img src={twitterSvg} alt="twitterSvg" />
+                        </a>
                     </li>
                     <li className="aboutMeSocial-icons">
-                       <a href="/">
-                           <img src={facebookSvg} alt="facebookSvg" />
-                       </a>
+                        <a href="https://web.facebook.com/chibuikem.nick.7">
+                            <img src={facebookSvg} alt="facebookSvg" />
+                        </a>
                     </li>
                     <li className="aboutMeSocial-icons">
-                       <a href="/">
-                           <img src={instagramSvg} alt="instagramSvg" />
-                       </a>
+                        <a href="https://www.instagram.com/chibuikem_nick/?hl=en">
+                            <img src={instagramSvg} alt="instagramSvg" />
+                        </a>
                     </li>
                     <li className="aboutMeSocial-icons">
-                       <a href="/">
-                           <img src={linkedinSvg} alt="linkedinSvg" />
-                       </a>
+                        <a href="https://www.linkedin.com/in/nick-chibuikem-883711159/">
+                            <img src={linkedinSvg} alt="linkedinSvg" />
+                        </a>
                     </li>
                     <li className="aboutMeSocial-icons">
-                       <a href="/">
-                           <img src={githubSvg} alt="githubSvg" />
-                       </a>
+                        <a href="https://github.com/cipher-tech">
+                            <img src={githubSvg} alt="githubSvg" />
+                        </a>
                     </li>
                 </ul>
-                <button className="CVDownload"
-                data-aos="fade-right"
+                <a href={githubSvg} download className="CVDownload"
+                    data-aos="fade-right"
                     data-aos-offset="100"
                     data-aos-delay="600"
                     data-aos-duration="600"
                     data-aos-easing="ease-in-out"
-                    data-aos-once="true">Download CV</button>
+                    data-aos-once="true">Download Resume
+                </a>
             </div>
 
             <img src={bgSvg} className="aboutMeSvg" alt="aboutSvg" />

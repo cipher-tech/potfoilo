@@ -90,9 +90,9 @@ function Works(props) {
     return (
         <Container 
             data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-delay="600"
-            data-aos-duration="800"
+            data-aos-offset="200"
+            data-aos-delay="300"
+            data-aos-duration="400"
             data-aos-easing="ease-in-out"
             data-aos-once="true">
             <OffsetText className="projects-title" offset="Projects" >

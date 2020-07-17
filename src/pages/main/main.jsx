@@ -7,28 +7,21 @@ export default class Main extends Component {
     render() {
         return (
             <>
-               <Head>
-                   
-               </Head>
+               <Head/>
 
-               <AboutMe>
-               </AboutMe>
-               <Service>
+               <AboutMe/>
 
-               </Service>
-               <SKill>
+               <Service/>
 
-               </SKill>
-               <Projects>
+               <SKill/>
 
-               </Projects>
-               <Testimonial>
+               <Projects/>
 
-               </Testimonial>
-               <Contact>
+               <Testimonial/>
 
-               </Contact>
-               <Foot></Foot>
+               <Contact/>
+               
+               <Foot/>
             </>
         )
     }

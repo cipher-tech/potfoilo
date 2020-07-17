@@ -42,6 +42,7 @@ import 'aos/dist/aos.css'
       medium: "5rem",
       small: "4rem",
       xsmall: "3rem",
+      xxsmall: "2rem",
 
       mainFont: "Montserrat",
       extra: "Segoe UI",
