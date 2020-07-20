@@ -38,10 +38,10 @@ import 'aos/dist/aos.css'
     colorBg: "#322F55",
     font: {
       xlarge: "15rem",
-      large: "10rem",
-      medium: "5rem",
-      small: "4rem",
-      xsmall: "3rem",
+      large: "5rem",
+      medium: "3rem",
+      small: "2.4rem",
+      xsmall: "2.1rem",
       xxsmall: "2rem",
 
       mainFont: "Montserrat",

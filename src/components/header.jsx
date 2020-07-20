@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled, { css, keyframes } from 'styled-components'
 import logo from "../images/logo.jpg"
 import personSvg from "../images/personSvg.svg"
 import { Diamond, Triangle, Circle } from './styledComponents'
 import breakPoint from './breakPoints'
-import { DataAos } from '.'
+import { ReactComponent as MenuIcon } from "../images/svgIcons/menu.svg"
+import { DataAos} from '.'
+import { useSpring, animated } from 'react-spring'
 
 const bounce = keyframes`
     0% {
@@ -49,6 +51,81 @@ let Container = styled.div`
     @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
         grid-template-columns: minmax(30rem, 1fr) 32%;
         }
+        .navbar-mobile{
+            position: fixed;
+            top: 0rem;
+            right: 0rem;
+            display: grid;
+            align-items: center;
+            place-items: center;
+            padding: 2rem;
+            z-index: 1200;
+            display: none; 
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
+                display: grid; 
+            }
+            &__icon{
+                display: grid;
+                align-items: center;
+                place-items: center;
+                align-self: center;
+                height: 4rem;
+                width: 4rem;
+                padding: 0rem .1rem;
+                transition: all .3s ease-in-out .1s;
+                z-index: 1300;
+                cursor: pointer;
+                justify-self: ${props => props.sidenavIsOpen ? "center" : "flex-start"};
+
+                path{
+                    height: 100%;
+                    fill: white;
+                    color: white;
+                }
+            }
+            &__overlay{
+                content: "";
+                position: fixed;
+                top: 3rem;
+                right: 3rem;
+                height: 2rem;
+                width: 2rem;
+                border-radius: 50%;
+                background: linear-gradient(to bottom , ${props => props.theme.colorPrimary} 40% ,  ${props => props.theme.colorSecondary} ) ;
+                /* transform: scale(0); */
+                transition: all 1s cubic-bezier(.04,1.44,.91,-0.33);
+            }
+        }
+        .navbar-mobile__list{
+            position: fixed;
+            top: 50%;
+            /* left: -50%; */
+            /* width: 25rem; */
+            transform: translate(-50%, -50%);
+            list-style: none;
+            z-index: 1203;
+            display: flex;
+            flex-direction: column;
+            &--item{
+                text-transform: capitalize;
+                padding: 1rem 5rem;
+                margin: 1rem 0;
+                cursor: pointer;
+                text-align: center;
+                background-image: linear-gradient(125deg,  transparent 50%,  ${props => props.theme.colorSecondary} 50% ) ;
+                font-size: ${props => props.theme.font.small};
+                transition: all .4s ease-in-out .1s;
+                background-size: 230%;
+                color: ${props => props.theme.colorBg};
+                text-decoration: none;
+
+                &:hover{
+                    background-position: 100%;
+                    transform: translateX(1rem);
+                }
+            }            
+
+        }
     .header--logo{
         height: 5.6rem;
         width: 5.6rem;
@@ -71,30 +148,62 @@ let Container = styled.div`
             display: none;
         }
         .nav-wrapper{
-            display: flex;
+            /* display: flex;
             width: 45rem;
-            padding: 2rem;
-            margin-right: 3rem;
+           
             align-content: center;
             justify-content: space-around;
-            flex-wrap: nowrap;
-            /* flex-basis: 60rem; */
+            flex-wrap: nowrap; */
             
+            display: flex;
+            justify-content: space-around;
+            justify-self: flex-end;
+            align-content: center;
+            align-self: center;
+            padding: 2rem;
+            margin-right: 3rem;
+            /* padding-right: 4rem;  */
+            width: 45rem;
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
+                display: none; 
+            }
             @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {
                 margin-right: 0rem;
-                width: 35rem;
+                width: 45rem;
              }
 
-            &--items{
+            &--items,a{
+                display: flex;
+                position: relative;
                 cursor: pointer;
-                text-align: left;
+                justify-content: center;
+                text-align: center;
+                /* text-align: left; */
                 list-style: none;
                 color: ${props => props.theme.colorInfo};
-                text-align: left;
+                padding: 1rem 1rem;
+                list-style-type: none;
+                height: 100%;
+                width: 100%;
+                text-decoration: none;
                 transition: all .1s ease;
+                @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
+                    font-size: ${props => props.theme.font.xsmall}
+                }
+                &::before{
+                    display: flex;
+                    content: " ";
+                    justify-content: center;
+                    position: absolute;
+                    bottom: .2rem;
+                    width: 0%;
+                    height: .2rem;
+                    transition: all .2s ease-in;
+                    background: ${props => props.theme.colorInfo};
+                }
 
-                &:hover{
-                    border-bottom: 2px solid ${props => props.theme.colorInfo}
+                &:hover::before{
+                    width: 65%;
                 }
             }
         }
@@ -222,8 +331,32 @@ let Container = styled.div`
     
 `
 function Header(props) {
+    const [mobileNavIsOpen, setMobileNavIsOpen] = useState(!true)
+    const toggleMobileNav = () => {
+        setMobileNavIsOpen(!mobileNavIsOpen)
+    }
+    // const closeMobileNav = () => {
+    //     setMobileNavIsOpen(false)
+    // }
+    const spring = useSpring({
+        transform: mobileNavIsOpen ? "scale(170)" : "scale(0)"
+    })
+    const springMove = useSpring({
+        left: mobileNavIsOpen ? "50%;" : "-50%"
+    })
     return (
         <Container>
+            <div className="navbar-mobile">
+                <MenuIcon className="navbar-mobile__icon" onClick={toggleMobileNav} />
+                <animated.div style={{ transform: spring.transform }} className="navbar-mobile__overlay"></animated.div>
+            </div>
+            <animated.ul style={{ left: springMove.left }} onClick={toggleMobileNav} className="navbar-mobile__list">
+                <a href='/' className="navbar-mobile__list--item">home</a>
+                <a href='#about' className="navbar-mobile__list--item">About</a>
+                <a href='#skills' className="navbar-mobile__list--item">Skills</a>
+                <a href='#project' className="navbar-mobile__list--item">project</a>
+                <a href='#contact' className="navbar-mobile__list--item">contact</a>
+            </animated.ul>
 
             <div className="header--logo">
                 <DataAos aos="fade-right" aosOffset="100" aosDelay="1000"
@@ -233,37 +366,37 @@ function Header(props) {
             </div>
             {/* <DataAos aos="fade-right" aosOffset="100" aosDelay="1500"
                 aosDuration="400" aosEasing="ease-in-out" aosOnce="true"> */}
-                <div className="header-text"
-                    // data-aos="fade-right"
-                    data-aos-offset="100"
-                    data-aos-delay="1000"
-                    data-aos-duration="600"
-                    data-aos-easing="ease-in-out"
-                    data-aos-once="true">
-                    <div className="header-text--svgIcon-1">
-                        <Triangle />
-                    </div>
-                    <div className="header-text--svgIcon-2">
-                        <Circle />
-                    </div>
-                    <div className="header-text--svgIcon-3">
-                        <Diamond />
-                    </div>
-                    <h3>
-                        Hi, <br />
+            <div className="header-text"
+                // data-aos="fade-right"
+                data-aos-offset="100"
+                data-aos-delay="1000"
+                data-aos-duration="600"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true">
+                <div className="header-text--svgIcon-1">
+                    <Triangle />
+                </div>
+                <div className="header-text--svgIcon-2">
+                    <Circle />
+                </div>
+                <div className="header-text--svgIcon-3">
+                    <Diamond />
+                </div>
+                <h3>
+                    Hi, <br />
                     I'm Onubogu Chibuikem
                 </h3>
-                    <p>
-                        I'm a Computer science graduate,
-                        Programmer and web desinger
+                <p>
+                    I'm a Computer science graduate,
+                    Programmer and web desinger
                     <br />
-                        <span>
-                            Nice to meet you
+                    <span>
+                        Nice to meet you
                     </span>
-                    </p>
+                </p>
 
 
-                </div>
+            </div>
             {/* </DataAos> */}
             <div className="header-nav nav"
                 data-aos="fade-left"
@@ -273,10 +406,11 @@ function Header(props) {
                 data-aos-easing="ease-in-out"
                 data-aos-once="true">
                 <ul className="nav-wrapper">
-                    <li className="nav-wrapper--items">Home</li>
-                    <li className="nav-wrapper--items">About</li>
-                    <li className="nav-wrapper--items">Skills</li>
-                    <li className="nav-wrapper--items">Projects</li>
+                    <a href="/" className="nav-wrapper--items">Home</a>
+                    <a href="#about" className="nav-wrapper--items">About</a>
+                    <a href="#skills" className="nav-wrapper--items">Skills</a>
+                    <a href="#projects" className="nav-wrapper--items">Projects</a>
+                    <a href="#contact" className="nav-wrapper--items">Contact</a>
                 </ul>
             </div>
             <div className="header-svg">

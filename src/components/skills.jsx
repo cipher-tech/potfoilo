@@ -210,7 +210,7 @@ function Skills() {
         },
     ]
     return (
-        <Container>
+        <Container id="skills">
             <OffsetText className="title" offset="Skills">
                 Skills
             </OffsetText>

@@ -48,6 +48,7 @@ let Container = styled.div`
 function Contacts() {
     return (
         <Container
+            id="contact"
             data-aos="fade-up"
             data-aos-offset="100"
             data-aos-delay="300"

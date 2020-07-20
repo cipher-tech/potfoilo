@@ -241,7 +241,7 @@ let Container = styled.div`
 `
 function About(props) {
     return (
-        <Container className="aboutMe"
+        <Container id="about" className="aboutMe"
             data-aos="fade-right"
             data-aos-offset="90"
             data-aos-delay="400"
