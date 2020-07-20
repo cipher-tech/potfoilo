@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/potfoilo/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/potfoilo/static/js/main.bc137d67.chunk.js",
-    "main.js.map": "/potfoilo/static/js/main.bc137d67.chunk.js.map",
+    "main.js": "/potfoilo/static/js/main.fd06c9a6.chunk.js",
+    "main.js.map": "/potfoilo/static/js/main.fd06c9a6.chunk.js.map",
     "runtime-main.js": "/potfoilo/static/js/runtime-main.cbf78d92.js",
     "runtime-main.js.map": "/potfoilo/static/js/runtime-main.cbf78d92.js.map",
     "static/css/2.605bd980.chunk.css": "/potfoilo/static/css/2.605bd980.chunk.css",
-    "static/js/2.662ea582.chunk.js": "/potfoilo/static/js/2.662ea582.chunk.js",
-    "static/js/2.662ea582.chunk.js.map": "/potfoilo/static/js/2.662ea582.chunk.js.map",
+    "static/js/2.05d8a01b.chunk.js": "/potfoilo/static/js/2.05d8a01b.chunk.js",
+    "static/js/2.05d8a01b.chunk.js.map": "/potfoilo/static/js/2.05d8a01b.chunk.js.map",
     "index.html": "/potfoilo/index.html",
-    "precache-manifest.93931984613c73675816b9d1012a68f1.js": "/potfoilo/precache-manifest.93931984613c73675816b9d1012a68f1.js",
+    "precache-manifest.e96c193f5e2a2580f3fe62136b56c0d1.js": "/potfoilo/precache-manifest.e96c193f5e2a2580f3fe62136b56c0d1.js",
     "service-worker.js": "/potfoilo/service-worker.js",
     "static/css/2.605bd980.chunk.css.map": "/potfoilo/static/css/2.605bd980.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/potfoilo/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.662ea582.chunk.js.LICENSE.txt": "/potfoilo/static/js/2.662ea582.chunk.js.LICENSE.txt",
+    "static/js/2.05d8a01b.chunk.js.LICENSE.txt": "/potfoilo/static/js/2.05d8a01b.chunk.js.LICENSE.txt",
     "static/media/XIcon.svg": "/potfoilo/static/media/XIcon.0bbd801f.svg",
     "static/media/aboutMeCurve.svg": "/potfoilo/static/media/aboutMeCurve.71ad6429.svg",
     "static/media/aboutPic.JPG": "/potfoilo/static/media/aboutPic.f8720d19.JPG",
@@ -38,6 +38,7 @@
     "static/media/linkedin.svg": "/potfoilo/static/media/linkedin.11c59650.svg",
     "static/media/logo.jpg": "/potfoilo/static/media/logo.60b16a42.jpg",
     "static/media/materialize.svg": "/potfoilo/static/media/materialize.fe397f2a.svg",
+    "static/media/menu.453c0f95.svg": "/potfoilo/static/media/menu.453c0f95.svg",
     "static/media/mongodb.svg": "/potfoilo/static/media/mongodb.2985235d.svg",
     "static/media/mongoose.svg": "/potfoilo/static/media/mongoose.a0244603.svg",
     "static/media/mysql.svg": "/potfoilo/static/media/mysql.f80a91ba.svg",
@@ -62,8 +63,8 @@
   "entrypoints": [
     "static/js/runtime-main.cbf78d92.js",
     "static/css/2.605bd980.chunk.css",
-    "static/js/2.662ea582.chunk.js",
+    "static/js/2.05d8a01b.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.bc137d67.chunk.js"
+    "static/js/main.fd06c9a6.chunk.js"
   ]
 }
