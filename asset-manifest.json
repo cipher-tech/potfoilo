@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/potfoilo/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/potfoilo/static/js/main.fd06c9a6.chunk.js",
-    "main.js.map": "/potfoilo/static/js/main.fd06c9a6.chunk.js.map",
+    "main.js": "/potfoilo/static/js/main.c1310492.chunk.js",
+    "main.js.map": "/potfoilo/static/js/main.c1310492.chunk.js.map",
     "runtime-main.js": "/potfoilo/static/js/runtime-main.cbf78d92.js",
     "runtime-main.js.map": "/potfoilo/static/js/runtime-main.cbf78d92.js.map",
     "static/css/2.605bd980.chunk.css": "/potfoilo/static/css/2.605bd980.chunk.css",
     "static/js/2.05d8a01b.chunk.js": "/potfoilo/static/js/2.05d8a01b.chunk.js",
     "static/js/2.05d8a01b.chunk.js.map": "/potfoilo/static/js/2.05d8a01b.chunk.js.map",
     "index.html": "/potfoilo/index.html",
-    "precache-manifest.e96c193f5e2a2580f3fe62136b56c0d1.js": "/potfoilo/precache-manifest.e96c193f5e2a2580f3fe62136b56c0d1.js",
+    "precache-manifest.7929ef18b1ae108f297fc825b82d070d.js": "/potfoilo/precache-manifest.7929ef18b1ae108f297fc825b82d070d.js",
     "service-worker.js": "/potfoilo/service-worker.js",
     "static/css/2.605bd980.chunk.css.map": "/potfoilo/static/css/2.605bd980.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/potfoilo/static/css/main.5ecd60fb.chunk.css.map",
@@ -65,6 +65,6 @@
     "static/css/2.605bd980.chunk.css",
     "static/js/2.05d8a01b.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.fd06c9a6.chunk.js"
+    "static/js/main.c1310492.chunk.js"
   ]
 }
