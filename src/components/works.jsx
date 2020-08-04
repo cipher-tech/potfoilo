@@ -64,6 +64,65 @@ let Container = styled.div`
         margin: 1rem 2rem;
         width: 35rem;
         
+        .title{
+            display: flex;
+            width: 100%;
+            font-size: 2rem;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .text{
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 1.6;
+            font-size: ${props => props.theme.font.xxxsmall};
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            color: #fff;
+        }
+        .project-tags{
+            /* width: 80%; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: .5rem 0;
+            padding: .5rem 2rem;
+            font-size: ${props => props.theme.font.xxxsmall};
+            &__item{
+                list-style-type: square;
+                list-style-position: inside;
+                padding: .5rem 0rem;
+                text-align: left;
+                width: 100%;
+            }
+        }
+        .btn-wrapper{
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem 2remm;
+            &__item{
+                border: solid 2px ${props => props.theme.colorPrimary};
+                border-radius: 1rem;
+                background: transparent;
+                display: block;
+                padding: .5rem 1.5rem;
+                cursor: pointer;
+                transition: all .5s ease;
+                text-decoration: none;
+                color: ${props => props.theme.colorLight};
+                font-size: ${props => props.theme.font.xxsmall};
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    border: solid 2px ${props => props.theme.colorLight};
+                    background: ${props => props.theme.colorLight};
+                    color: ${props => props.theme.colorPrimary};
+                }
+            }
+        }
         /* @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
            width: 40px;
         } */
@@ -87,9 +146,91 @@ function Works(props) {
         // }
     }
 
+    const Projects = [
+        {
+            title: "Coin App",
+            text: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            `,
+            tags: ["html", 'css', 'javascript', 'react', 'webpack'],
+            links: {
+                demo: "/",
+                repo: "/",
+            },
+            image: bg1
+        },
+        {
+            title: "Coin App",
+            text: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            `,
+            tags: ["html", 'css', 'javascript', 'react', 'webpack'],
+            links: {
+                demo: "/",
+                repo: "/",
+            },
+            image: bg2
+        },
+        {
+            title: "Coin App",
+            text: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            `,
+            tags: ["html", 'css', 'javascript', 'react', 'webpack'],
+            links: {
+                demo: "/",
+                repo: "/",
+            },
+            image: bg3
+        },
+        {
+            title: "Coin App",
+            text: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            `,
+            tags: ["html", 'css', 'javascript', 'react', 'webpack'],
+            links: {
+                demo: "/",
+                repo: "/",
+            },
+            image: bg1
+        },
+        {
+            title: "Coin App",
+            text: ` Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            `,
+            tags: ["html", 'css', 'javascript', 'react', 'webpack'],
+            links: {
+                demo: "/",
+                repo: "/",
+            },
+            image: bg3
+        },
+    ]
     return (
-        <Container 
-            id="projects" 
+        <Container
+            id="projects"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="300"
@@ -106,46 +247,28 @@ function Works(props) {
                 </div>
             </OffsetText>
             <Swiper {...params} className="swiper-wrapper">
-                <WorksCard img={bg1}>
-                    <p className="title">
-                        Project Name
-                    </p>
-                    <p className='text'>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </p>
-                </WorksCard>
-                <WorksCard img={bg2}>
-                    <p className="title">
-                        Project Name
-                    </p>
-                    <p className='text'>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </p>
-                </WorksCard>
-                <WorksCard img={bg3}>
-                    <p className="title">
-                        Project Name
-                    </p>
-                    <p className='text'>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </p>
-                </WorksCard>
-                <WorksCard img={bg2}>
-                    <p className="title">
-                        Project Name
-                    </p>
-                    <p className='text'>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </p>
-                </WorksCard>
-                <WorksCard img={bg1}>
-                    <p className="title">
-                        Project Name
-                    </p>
-                    <p className='text'>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </p>
-                </WorksCard>
+                {
+                    Projects.map((item, index) => (
+                        <WorksCard key={index} img={item.image}>
+                            <p className="title">
+                               {item.title}
+                            </p>
+                            <p className='text'>
+                                {item.text}
+                            </p>
+                            <ul className="project-tags">
+                                {
+                                    item.tags.map((tag, index) =>  <li key={index} className="project-tags__item">{tag}</li> )
+                                }
+                            </ul>
+                            <div className="btn-wrapper">
+                                <a href={item.links.demo} className="btn-wrapper__item">Demo</a>
+                                <a href={item.links.repo} className="btn-wrapper__item">Repo</a>
+                                <a href={'/#projectss'}className="btn-wrapper__item">More</a>
+                            </div>
+                        </WorksCard>
+                    ))
+                }
             </Swiper>
         </Container>
     )

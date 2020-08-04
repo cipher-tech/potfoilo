@@ -37,12 +37,13 @@ import 'aos/dist/aos.css'
     colorInfo: "#83C1FD",
     colorBg: "#322F55",
     font: {
-      xlarge: "15rem",
-      large: "5rem",
-      medium: "3rem",
+      xlarge: "4.5rem",
+      large: "4rem",
+      medium: "2.7rem",
       small: "2.4rem",
       xsmall: "2.1rem",
-      xxsmall: "2rem",
+      xxsmall: "1.6rem",
+      xxxsmall: "1.4rem",
 
       mainFont: "Montserrat",
       extra: "Segoe UI",
