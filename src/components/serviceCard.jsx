@@ -17,9 +17,9 @@ const Container = styled.div`
         justify-items: center;
         font-size: 1.3rem;
         line-height: 1.5;
-
+        border-radius: 1rem;
         &--svg{
-            margin: 0rem;
+            margin-top: 1rem;
             width: 16rem;
             height: 10rem;
             grid-column: 1/-1;
@@ -42,20 +42,24 @@ const Container = styled.div`
             font-size: 1.5rem;
             grid-column: 1/-1;
             padding: 1rem;
+            text-transform: capitalize;
             color: ${props => props.theme.colorPrimary}
         }
         &--tools{
-            width: 80%;
+            /* width: 80%; */
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
             padding:2rem;
+            text-transform: capitalize;
 
             &-item{
                 list-style-type: square;
                 list-style-position: inside;
                 text-align: left;
                 width: 100%;
+                text-transform: capitalize;
+
             }
         }
     }

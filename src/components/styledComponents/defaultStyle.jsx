@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    font-family:${props => props.theme.font.mainFont};
   }  
   html{
     box-sizing: border-box;
@@ -29,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     min-height: 100vh;
     color: ${props => props.theme.colorSecondary};
-    font-family: montserrat, sans-serif;
+    ${'' /* font-family: montserrat, sans-serif; */}
 }
 `
 export default GlobalStyle  //DefaultStyle

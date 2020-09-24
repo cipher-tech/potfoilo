@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 // import programmerSvg from "../images/servicesSvg.svg"
 import programmerSvg from "../images/servicesSvg.svg"
+import laravelSvg from "../images/svgIcons/laravelUndraw.svg"
+import undrawReact from "../images/svgIcons/undrawReact.svg"
 import bgSvg from "../images/aboutMeCurve.svg"
 import { OffsetText, Triangle, XIcon } from './styledComponents'
 import { ServiceCard } from '.'
@@ -92,94 +94,38 @@ let Container = styled.div`
             left: 30%;
         }
     }
-    .services-description{
-        z-index: 10;
-        margin: .3rem 1rem;
-        background: white;
-        display: grid;
-        /* grid-column: 1/-1; */
-        /* width: 33.3333%; */
-        box-shadow: 0.3rem 0.3rem .7rem #ece7e773,
-                -0.3rem -0.3rem .7rem rgba(94,104,121, .288);
-        grid-template-columns: 1fr;
-        justify-self: center;
-        justify-items: center;
-        font-size: 1.3rem;
-        line-height: 1.5;
-
-        &--svg{
-            margin: 0rem;
-            width: 16rem;
-            height: 10rem;
-            grid-column: 1/-1;
-            }
-        &--title{
-            text-align: center;
-            font-size: 1.5rem;
-            grid-column: 1/-1;
-            padding: 1rem;
-            &-text{
-                margin-top: 0;
-            }
-        }
-        &--content{
-            width: 80%;
-        }
-        &--subtitle{
-            text-align: center;
-            font-size: 1.5rem;
-            grid-column: 1/-1;
-            padding: 1rem;
-            color: ${props => props.theme.colorPrimary}
-        }
-        &--tools{
-            width: 80%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-            padding:2rem;
-
-            &-item{
-                list-style-type: none;
-            }
-        }
-    }
 `
 function Services() {
     const services = [
         {
             img: programmerSvg,
-            title: "Desinger",
+            title: "Designer",
             content: `I appreciate clean and simplistic design patters, 
-                including material design and neomorphesm, 
-                and incooperate taughtful interactions and animations.`,
+                including material design and neo-morphism, 
+                and incorporate thoughtful interactions and animations.`,
             subtitle: "Things I Design",
             stack: "UX, UI, Web apps, Mobile apps.",
             subtitle2: "Design Tools:",
-            tools: ["Balsamiq","AdobeXD","Invision","pen&Paper",
-                "Fireworks"
-                ]
+            tools: ["Balsamiq","AdobeXD","Invision","pen&Paper"]
         },
         {
-            img: programmerSvg,
+            img: undrawReact,
             title: "Front-End ",
             content: `i enjoy building project from scratch 
                 and make designs come alive using clean code.`,
             subtitle: "Languages Stack",
-            stack: "HTML, CSS, Scss, Pug, JavaScript, React, jQuery.",
+            stack: "HTML, SCSS, JavaScript, Typescript, React, NextJs.",
             subtitle2: "Design Tools:",
             tools: ["VsCode",
-                "BootStrap",
-                "Materialize",
+                "Bootstrap",
                 "GitHub",
                 "terminal",
-                "Codepen",
-                "webpack",
+                "apollo",
                 "barbel"
             ]
         },
         {
-            img: programmerSvg,
+            img: laravelSvg,
             title: "Back-End",
             content: `I build server side apps optimized for performance 
                 and continuous integration as well as  efficiency.`,
@@ -190,7 +136,6 @@ function Services() {
                 "Laravel",
                 "Sequelize",
                 "Mongoose",
-                "Apollo"
             ]
         },
     ]

@@ -8,7 +8,7 @@ let StyledText = styled.h4`
     position: relative;
     font-size: 4rem;
     font-weight: bold;
-    font-family: "Mongolian Baiti";
+    /* font-family: "Mongolian Baiti"; */
     padding-top:4rem;
     text-decoration: underline;
     color: ${props => props.white ? props.theme.colorLight: props.theme.colorPrimary};

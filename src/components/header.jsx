@@ -39,7 +39,7 @@ let Container = styled.div`
     grid-column: 1/-1;
     display: grid;
     grid-template-rows: min-content 1fr;
-    grid-template-columns: 1fr 65%;
+    grid-template-columns: 1fr 50%;
     font-size: 1.6rem;
     animation: ${bounce} 1.5s cubic-bezier(0.1, -0.6, 0.2,0);
     @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
@@ -266,7 +266,8 @@ let Container = styled.div`
 
         h3{
             font-weight: 400;
-            font-size: 2.5rem;
+            font-size: 3rem;
+            font-family: "Gotham Rounded";
             text-shadow: 0 .15rem .2rem ${props => props.theme.colorDark};
             margin-bottom: 3rem;
             @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {
@@ -298,6 +299,23 @@ let Container = styled.div`
              }
              
         }
+        }
+        &__button{
+            padding: 1.3rem 2.5rem;
+            color: ${props => props.theme.colorLight};
+            background: ${props => props.theme.colorPrimary};
+            border-radius: .8rem;
+            font-size: ${props => props.theme.font.xsmall};
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 2rem;
+            display: flex;
+            width: max-content;
+
+            &:focus{
+                outline: none;
+            }
         }
         
     }
@@ -387,12 +405,15 @@ function Header(props) {
                     I'm Onubogu Chibuikem
                 </h3>
                 <p>
-                    I'm a Computer science graduate,
-                    Programmer and web desinger
+                    I'm a Computer science graduate, passionate
+                    programmer and creative full-stack web developer 
                     <br />
-                    <span>
+                    {/* <span>
                         Nice to meet you
-                    </span>
+                    </span> */}
+                    <a href="mailto:nickchibuikem@gmail.com" className="header-text__button">
+                        Hire Me
+                    </a>
                 </p>
 
 

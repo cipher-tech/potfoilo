@@ -9,6 +9,7 @@ import instagramSvg from "../images/instagram.svg"
 import linkedinSvg from "../images/linkedin.svg"
 import devStackSvg from "../images/devStack.svg"
 import githubSvg from "../images/github.svg"
+import OnuboguChibuikemResume from "../images/OnuboguChibuikemResume.pdf"
 // import Text from './styledComponents/offsetText'
 
 
@@ -30,7 +31,7 @@ let Container = styled.div`
     flex-direction: row-reverse; 
     align-items: center ;
     gap: 2rem;
-    @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
+    @media only screen and (max-width: ${props => props.theme.breakPoints.bpMedium}) {
        grid-column: 1/-1
     }
 
@@ -43,6 +44,7 @@ let Container = styled.div`
         display: block;
         padding: 0;
         bottom: -20vh;
+        z-index: -1;
         @media only screen and (min-width: ${props => props.theme.breakPoints.bpLargest}) {
             bottom: -20rem;
             max-height: 1800px !important;
@@ -146,7 +148,12 @@ let Container = styled.div`
             font-size: 1.5rem;
             line-height: 1.7;
             margin-bottom: 2rem;
-
+            opacity: .7;
+            &__important{
+                opacity: 1.0;
+                font-weight: bold;
+                font-size: 1.7rem;
+            }
             &--stack{
                 color: ${props => props.theme.colorPrimary};
                 font-size: 1.6rem;
@@ -167,6 +174,10 @@ let Container = styled.div`
             line-height: 1.7;
             list-style-position: inside;
             margin-bottom: 1rem;
+            opacity: .7;
+            &--items, &--items a {
+                color: currentColor
+            }
         }
 
     }
@@ -177,29 +188,29 @@ let Container = styled.div`
         z-index: 100;
         width: 100%;
         .aboutMeSocial{
-        display: flex;
-        
-        justify-content: space-around;
-        list-style-type: none;
-        justify-items: left;
-        padding: 1rem;
-        width: 25rem;
-        margin: 1rem 2rem 1rem 18rem;
-        border-bottom: 5px solid ${props => props.theme.colorPrimary};
-        @media only screen and (min-width: ${props => props.theme.breakPoints.bpLargest}) {
-            margin: 1rem 2rem 1rem 10rem;
-        }
-        @media only screen and (max-width: ${props => props.theme.breakPoints.bpxLarge}) {
-            margin: 1rem 3rem;
+            display: flex;
             
-        }
-        @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
-            margin: 1rem 3rem;
-        }
-        @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
-            margin: 1rem 1rem;
-            width: 20rem;
-        }
+            justify-content: space-around;
+            list-style-type: none;
+            justify-items: left;
+            padding: 1rem;
+            width: 25rem;
+            margin: 1rem 2rem 1rem 18rem;
+            border-bottom: 5px solid ${props => props.theme.colorPrimary};
+            @media only screen and (min-width: ${props => props.theme.breakPoints.bpLargest}) {
+                margin: 1rem 2rem 1rem 10rem;
+            }
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpxLarge}) {
+                margin: 1rem 3rem;
+                
+            }
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
+                margin: 1rem 3rem;
+            }
+            @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
+                margin: 1rem 1rem;
+                width: 20rem;
+            }
 
         &-icons{
             width: auto;
@@ -282,9 +293,14 @@ function About(props) {
                     I am a skilled programmer that likes writing modular codes that are easily
                     maintainable and supports continuous integration.
                     I'm skilled in the art of translating design mock-ups and prototypes
-                    in tools like figma and adobeXD into responsive full fledged iweb apps.
-                    I currently work at rapport tech as a front-end engineer, working on different
-                    projects. In my spare time I work on my personal projects and study to get better.
+                    from apps like Figma and AdobeXD into responsive full fledged web apps
+                    using tools like
+                    <span className="aboutMeTxt-main__important"> Javascript, React, PHP and NodeJS </span>.
+                    I also build PC apps using
+                    <span className="aboutMeTxt-main__important"> Python. </span>
+                    I've worked with various companies in the past and gained hands on experience in the field,
+                    I'm currently a freelance software engineer looking for my next project.
+                    In my spare time I work on my personal projects and study to get better.
                     My hobbies include hanging out with friends, watching movies and playing video games.
                     <br />
                     <span className="aboutMeTxt-main--stack">
@@ -293,16 +309,16 @@ function About(props) {
                 </p>
                 <ul className="aboutMeTxt-info">
                     <li className="aboutMeTxt-info--items">
-                        E-mail: nickchibuikem@gmail.com
+                        E-mail: <a href="mailto:nickchibuikem@gmail.com"> nickchibuikem@gmail.com</a>
                     </li>
                     {/* <li className="aboutMeTxt-info--items">
                         Birthday: 29th April 1998
                     </li> */}
                     <li className="aboutMeTxt-info--items">
-                        Phone: 08066060467
+                        Phone: <a href="tel:+2348066060467"> (+234) 0806-606-0467</a>
                     </li>
                     <li className="aboutMeTxt-info--items">
-                        Freelance: Avaliable
+                        Freelance: Available
                     </li>
                     <li className="aboutMeTxt-info--items">
                         experience: 4 years
@@ -347,7 +363,7 @@ function About(props) {
                         </a>
                     </li>
                 </ul>
-                <a href={githubSvg} download className="CVDownload"
+                <a href={OnuboguChibuikemResume} download className="CVDownload"
                     data-aos="fade-right"
                     data-aos-offset="100"
                     data-aos-delay="600"

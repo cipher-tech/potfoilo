@@ -41,11 +41,11 @@ import 'aos/dist/aos.css'
       large: "4rem",
       medium: "2.7rem",
       small: "2.4rem",
-      xsmall: "2.1rem",
+      xsmall: "1.8rem",
       xxsmall: "1.6rem",
       xxxsmall: "1.4rem",
 
-      mainFont: "Montserrat",
+      mainFont: "Gotham Rounded",
       extra: "Segoe UI",
       offSet: "Mongolian Baiti"
     },
