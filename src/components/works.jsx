@@ -205,8 +205,8 @@ function Works(props) {
             `,
             tags: ["html", 'css', 'javascript', 'react', 'webpack'],
             links: {
-                demo: "/",
-                repo: "/",
+                demo: "https://cipher-tech.github.io/movie_app/",
+                repo: "https://github.com/cipher-tech/movie_app",
             },
             image: movieAppImage1,
             previews: [movieAppImage1, movieAppImage2, movieAppImage3]
