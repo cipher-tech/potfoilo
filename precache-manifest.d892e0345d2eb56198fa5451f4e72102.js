@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0e22c6adae1ef7e9b70b1cf0fd9f4b98",
+    "revision": "5ddd7d6308ba547f53ae745a438ad84f",
     "url": "/potfoilo/index.html"
   },
   {
-    "revision": "67ef3924c01814c1aa09",
+    "revision": "52d1951778f4c6222499",
     "url": "/potfoilo/static/css/2.605bd980.chunk.css"
   },
   {
-    "revision": "c7758883abd32b605914",
+    "revision": "e20593ed6e45bd347eb5",
     "url": "/potfoilo/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "67ef3924c01814c1aa09",
-    "url": "/potfoilo/static/js/2.e8b1f76b.chunk.js"
+    "revision": "52d1951778f4c6222499",
+    "url": "/potfoilo/static/js/2.9bbe6c13.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/potfoilo/static/js/2.e8b1f76b.chunk.js.LICENSE.txt"
+    "url": "/potfoilo/static/js/2.9bbe6c13.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c7758883abd32b605914",
-    "url": "/potfoilo/static/js/main.29f5b1ac.chunk.js"
+    "revision": "e20593ed6e45bd347eb5",
+    "url": "/potfoilo/static/js/main.dfb81475.chunk.js"
   },
   {
     "revision": "be386dae6c0b7dade5b7",
@@ -198,6 +198,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7634d1a3c06643e9394adc4ba35d7d2e",
     "url": "/potfoilo/static/media/php.7634d1a3.svg"
+  },
+  {
+    "revision": "60aedae8f9e26f3f63cc331b3049ad19",
+    "url": "/potfoilo/static/media/portfolio1.60aedae8.png"
+  },
+  {
+    "revision": "2670dc89b1be46a790cace3640d2c0ea",
+    "url": "/potfoilo/static/media/portfolio2.2670dc89.png"
+  },
+  {
+    "revision": "1cfe26d557dbdf23f4c103bd953f0f7c",
+    "url": "/potfoilo/static/media/portfolio3.1cfe26d5.png"
   },
   {
     "revision": "146716bdf1a351db5705ec1e6a25ed08",

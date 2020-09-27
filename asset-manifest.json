@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/potfoilo/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/potfoilo/static/js/main.29f5b1ac.chunk.js",
-    "main.js.map": "/potfoilo/static/js/main.29f5b1ac.chunk.js.map",
+    "main.js": "/potfoilo/static/js/main.dfb81475.chunk.js",
+    "main.js.map": "/potfoilo/static/js/main.dfb81475.chunk.js.map",
     "runtime-main.js": "/potfoilo/static/js/runtime-main.cbf78d92.js",
     "runtime-main.js.map": "/potfoilo/static/js/runtime-main.cbf78d92.js.map",
     "static/css/2.605bd980.chunk.css": "/potfoilo/static/css/2.605bd980.chunk.css",
-    "static/js/2.e8b1f76b.chunk.js": "/potfoilo/static/js/2.e8b1f76b.chunk.js",
-    "static/js/2.e8b1f76b.chunk.js.map": "/potfoilo/static/js/2.e8b1f76b.chunk.js.map",
+    "static/js/2.9bbe6c13.chunk.js": "/potfoilo/static/js/2.9bbe6c13.chunk.js",
+    "static/js/2.9bbe6c13.chunk.js.map": "/potfoilo/static/js/2.9bbe6c13.chunk.js.map",
     "index.html": "/potfoilo/index.html",
-    "precache-manifest.8ac5e9279b522a0bbb1d9bb219305eda.js": "/potfoilo/precache-manifest.8ac5e9279b522a0bbb1d9bb219305eda.js",
+    "precache-manifest.d892e0345d2eb56198fa5451f4e72102.js": "/potfoilo/precache-manifest.d892e0345d2eb56198fa5451f4e72102.js",
     "service-worker.js": "/potfoilo/service-worker.js",
     "static/css/2.605bd980.chunk.css.map": "/potfoilo/static/css/2.605bd980.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/potfoilo/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.e8b1f76b.chunk.js.LICENSE.txt": "/potfoilo/static/js/2.e8b1f76b.chunk.js.LICENSE.txt",
+    "static/js/2.9bbe6c13.chunk.js.LICENSE.txt": "/potfoilo/static/js/2.9bbe6c13.chunk.js.LICENSE.txt",
     "static/media/OnuboguChibuikemResume.pdf": "/potfoilo/static/media/OnuboguChibuikemResume.ccbfdd27.pdf",
     "static/media/XIcon.svg": "/potfoilo/static/media/XIcon.0bbd801f.svg",
     "static/media/aboutMeCurve.svg": "/potfoilo/static/media/aboutMeCurve.71ad6429.svg",
@@ -57,6 +57,9 @@
     "static/media/p1-1.jpg": "/potfoilo/static/media/p1-1.c6c7d176.jpg",
     "static/media/personSvg.svg": "/potfoilo/static/media/personSvg.d770e555.svg",
     "static/media/php.svg": "/potfoilo/static/media/php.7634d1a3.svg",
+    "static/media/portfolio1.png": "/potfoilo/static/media/portfolio1.60aedae8.png",
+    "static/media/portfolio2.png": "/potfoilo/static/media/portfolio2.2670dc89.png",
+    "static/media/portfolio3.png": "/potfoilo/static/media/portfolio3.1cfe26d5.png",
     "static/media/python-5.svg": "/potfoilo/static/media/python-5.146716bd.svg",
     "static/media/react.svg": "/potfoilo/static/media/react.c3fbd71b.svg",
     "static/media/redis.svg": "/potfoilo/static/media/redis.4aaff929.svg",
@@ -71,8 +74,8 @@
   "entrypoints": [
     "static/js/runtime-main.cbf78d92.js",
     "static/css/2.605bd980.chunk.css",
-    "static/js/2.e8b1f76b.chunk.js",
+    "static/js/2.9bbe6c13.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.29f5b1ac.chunk.js"
+    "static/js/main.dfb81475.chunk.js"
   ]
 }
