@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/potfoilo/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/potfoilo/static/js/main.dfb81475.chunk.js",
-    "main.js.map": "/potfoilo/static/js/main.dfb81475.chunk.js.map",
+    "main.js": "/potfoilo/static/js/main.e08efa8c.chunk.js",
+    "main.js.map": "/potfoilo/static/js/main.e08efa8c.chunk.js.map",
     "runtime-main.js": "/potfoilo/static/js/runtime-main.cbf78d92.js",
     "runtime-main.js.map": "/potfoilo/static/js/runtime-main.cbf78d92.js.map",
     "static/css/2.605bd980.chunk.css": "/potfoilo/static/css/2.605bd980.chunk.css",
-    "static/js/2.9bbe6c13.chunk.js": "/potfoilo/static/js/2.9bbe6c13.chunk.js",
-    "static/js/2.9bbe6c13.chunk.js.map": "/potfoilo/static/js/2.9bbe6c13.chunk.js.map",
+    "static/js/2.a6ad48de.chunk.js": "/potfoilo/static/js/2.a6ad48de.chunk.js",
+    "static/js/2.a6ad48de.chunk.js.map": "/potfoilo/static/js/2.a6ad48de.chunk.js.map",
     "index.html": "/potfoilo/index.html",
-    "precache-manifest.d892e0345d2eb56198fa5451f4e72102.js": "/potfoilo/precache-manifest.d892e0345d2eb56198fa5451f4e72102.js",
+    "precache-manifest.dd10951b5d05c8b170e1f9b699d31792.js": "/potfoilo/precache-manifest.dd10951b5d05c8b170e1f9b699d31792.js",
     "service-worker.js": "/potfoilo/service-worker.js",
     "static/css/2.605bd980.chunk.css.map": "/potfoilo/static/css/2.605bd980.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/potfoilo/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.9bbe6c13.chunk.js.LICENSE.txt": "/potfoilo/static/js/2.9bbe6c13.chunk.js.LICENSE.txt",
+    "static/js/2.a6ad48de.chunk.js.LICENSE.txt": "/potfoilo/static/js/2.a6ad48de.chunk.js.LICENSE.txt",
     "static/media/OnuboguChibuikemResume.pdf": "/potfoilo/static/media/OnuboguChibuikemResume.ccbfdd27.pdf",
     "static/media/XIcon.svg": "/potfoilo/static/media/XIcon.0bbd801f.svg",
     "static/media/aboutMeCurve.svg": "/potfoilo/static/media/aboutMeCurve.71ad6429.svg",
@@ -35,7 +35,6 @@
     "static/media/github.svg": "/potfoilo/static/media/github.148e428b.svg",
     "static/media/graphql.svg": "/potfoilo/static/media/graphql.6270a2d4.svg",
     "static/media/html.svg": "/potfoilo/static/media/html.676e8188.svg",
-    "static/media/instagram.svg": "/potfoilo/static/media/instagram.6dce434e.svg",
     "static/media/invision-studio.svg": "/potfoilo/static/media/invision-studio.a16e8439.svg",
     "static/media/javascript.svg": "/potfoilo/static/media/javascript.61ed8b05.svg",
     "static/media/jquery.svg": "/potfoilo/static/media/jquery.499148cb.svg",
@@ -43,7 +42,7 @@
     "static/media/laravelUndraw.svg": "/potfoilo/static/media/laravelUndraw.a791d0f0.svg",
     "static/media/link.ef5935a4.svg": "/potfoilo/static/media/link.ef5935a4.svg",
     "static/media/linkedin.svg": "/potfoilo/static/media/linkedin.11c59650.svg",
-    "static/media/logo.jpg": "/potfoilo/static/media/logo.60b16a42.jpg",
+    "static/media/logo.jpg": "/potfoilo/static/media/logo.ea5ed269.jpg",
     "static/media/materialize.svg": "/potfoilo/static/media/materialize.27879f83.svg",
     "static/media/menu.a0b847dc.svg": "/potfoilo/static/media/menu.a0b847dc.svg",
     "static/media/mongodb.svg": "/potfoilo/static/media/mongodb.2985235d.svg",
@@ -74,8 +73,8 @@
   "entrypoints": [
     "static/js/runtime-main.cbf78d92.js",
     "static/css/2.605bd980.chunk.css",
-    "static/js/2.9bbe6c13.chunk.js",
+    "static/js/2.a6ad48de.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.dfb81475.chunk.js"
+    "static/js/main.e08efa8c.chunk.js"
   ]
 }

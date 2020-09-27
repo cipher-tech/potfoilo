@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ddd7d6308ba547f53ae745a438ad84f",
+    "revision": "c2b21aef9e748bbc92b58a4aca220963",
     "url": "/potfoilo/index.html"
   },
   {
-    "revision": "52d1951778f4c6222499",
+    "revision": "4137ff93a1f7134b75dc",
     "url": "/potfoilo/static/css/2.605bd980.chunk.css"
   },
   {
-    "revision": "e20593ed6e45bd347eb5",
+    "revision": "91b52ee965cf846c98b8",
     "url": "/potfoilo/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "52d1951778f4c6222499",
-    "url": "/potfoilo/static/js/2.9bbe6c13.chunk.js"
+    "revision": "4137ff93a1f7134b75dc",
+    "url": "/potfoilo/static/js/2.a6ad48de.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/potfoilo/static/js/2.9bbe6c13.chunk.js.LICENSE.txt"
+    "url": "/potfoilo/static/js/2.a6ad48de.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e20593ed6e45bd347eb5",
-    "url": "/potfoilo/static/js/main.dfb81475.chunk.js"
+    "revision": "91b52ee965cf846c98b8",
+    "url": "/potfoilo/static/js/main.e08efa8c.chunk.js"
   },
   {
     "revision": "be386dae6c0b7dade5b7",
@@ -112,10 +112,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/potfoilo/static/media/html.676e8188.svg"
   },
   {
-    "revision": "6dce434ebf136aa5a236c9d2d7fc91e4",
-    "url": "/potfoilo/static/media/instagram.6dce434e.svg"
-  },
-  {
     "revision": "a16e843934fd814b00b046af24e09741",
     "url": "/potfoilo/static/media/invision-studio.a16e8439.svg"
   },
@@ -144,8 +140,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/potfoilo/static/media/linkedin.11c59650.svg"
   },
   {
-    "revision": "60b16a4249ca1dca7367e40b13f3748c",
-    "url": "/potfoilo/static/media/logo.60b16a42.jpg"
+    "revision": "ea5ed26910799e51f2fe7f95b6bae2a0",
+    "url": "/potfoilo/static/media/logo.ea5ed269.jpg"
   },
   {
     "revision": "27879f8391309631b116f034cc2053a2",
