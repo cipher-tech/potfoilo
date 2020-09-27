@@ -5,7 +5,7 @@ import personSvg from "../images/personSvg.svg"
 import { Diamond, Triangle, Circle } from './styledComponents'
 import breakPoint from './breakPoints'
 import { ReactComponent as MenuIcon } from "../images/svgIcons/menu.svg"
-import { DataAos} from '.'
+// import { DataAos} from '.'
 import { useSpring, animated } from 'react-spring'
 
 const bounce = keyframes`
@@ -377,10 +377,10 @@ function Header(props) {
             </animated.ul>
 
             <div className="header--logo">
-                <DataAos aos="fade-right" aosOffset="100" aosDelay="1000"
-                    aosDuration="400" aosEasing="ease-in-out" aosOnce="true">
+                {/* <DataAos aos="fade-right" aosOffset="100" aosDelay="1000" */}
+                    {/* aosDuration="400" aosEasing="ease-in-out" aosOnce="true"> */}
                     <img src={logo} alt="logo" />
-                </DataAos>
+                {/* </DataAos> */}
             </div>
             {/* <DataAos aos="fade-right" aosOffset="100" aosDelay="1500"
                 aosDuration="400" aosEasing="ease-in-out" aosOnce="true"> */}
