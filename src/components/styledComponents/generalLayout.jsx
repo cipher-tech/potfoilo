@@ -5,7 +5,7 @@ let Layout = styled.div`
    
     grid-template-rows:70rem repeat(7, min-content);
     grid-template-columns: repeat(10, [col-start] minmax(min-content, 1fr) [col-end] );
-
+    overflow: hidden;
     @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
         grid-template-rows: 60rem repeat(7, min-content);
     }

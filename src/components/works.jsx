@@ -4,9 +4,18 @@ import styled from 'styled-components'
 import coinAppImage1 from "../images/projectImages/coinApp1.png"
 import coinAppImage2 from "../images/projectImages/coinApp2.png"
 import coinAppImage3 from "../images/projectImages/coinApp3.png"
+
 import movieAppImage1 from "../images/projectImages/movieApp1.png"
 import movieAppImage2 from "../images/projectImages/movieApp2.png"
 import movieAppImage3 from "../images/projectImages/movieApp3.png"
+
+import portfolio1 from "../images/projectImages/portfolio1.png"
+import portfolio2 from "../images/projectImages/portfolio2.png"
+import portfolio3 from "../images/projectImages/portfolio3.png"
+
+import animatedCheckOut1 from "../images/projectImages/animatedCheckOut1.png"
+import animatedCheckOut2 from "../images/projectImages/animatedCheckOut2.png"
+import animatedCheckOut3 from "../images/projectImages/animatedCheckOut3.png"
 
 import { ReactComponent as GitSvg} from "../images/svgIcons/gitSvg.svg"
 import { ReactComponent as LinkSvg} from "../images/svgIcons/link.svg"
@@ -18,7 +27,7 @@ let Container = styled.div`
     /* background: black; */
     grid-column: 2/10;
     /* height: 50vh; */
-    padding: 2rem;
+    /* padding: 2rem; */
     margin-bottom: 2rem;
     /* -webkit-box-reflect: below .1rem linear-gradient(tranparent,tranparent,
     rgba(0,0,0, .2) ); */
@@ -69,8 +78,10 @@ let Container = styled.div`
     .swiper-wrapper{ 
         /* height: 50rem; */
         margin: 1rem 2rem;
-        width: 35rem;
-        
+        max-width: 36rem;
+        @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
+            max-width: 33rem;
+        }
         .previews{
             display: grid;
             place-items: center;
@@ -185,6 +196,19 @@ function Works(props) {
 
     const Projects = [
         {
+            title: "My Portfolio",
+            text: ` My personal web site built with React, it contains information about me including my various projects
+                and working experience. Also contained in the web site is information about my programming skills like 
+                the various services i render as well as the programming languages and frameworks i use. `,
+            tags: ["html", 'css', 'javascript', 'react',"redux",'webpack'],
+            links: {
+                demo: "https://cipher-tech.github.io/potfoilo/",
+                repo: "https://github.com/cipher-tech/potfoilo",
+            },
+            image: portfolio1,
+            previews: [portfolio1, portfolio2, portfolio3]
+        },
+        {
             title: "Coin App",
             text: ` A crypto-currency web app built for CJGrandExchange company and also serves as their official website,
                 enables users trade various crypto-currencies and giftcards  easily across various african countries. 
@@ -192,8 +216,8 @@ function Works(props) {
             `,
             tags: ["html", 'css', 'javascript', 'react',"redux",'webpack'],
             links: {
-                demo: "/",
-                repo: "/",
+                demo: "https://cjgrandexchange.com/",
+                // repo: "https://github.com/cipher-tech/coin-app",
             },
             image: coinAppImage1,
             previews: [coinAppImage1, coinAppImage2, coinAppImage3]
@@ -203,7 +227,7 @@ function Works(props) {
             text: ` A concept movie streaming app, it enables users view details of top rated movies including, the details include:
                 popular actors and date of release. Movie app was built on top React and Redux. 
             `,
-            tags: ["html", 'css', 'javascript', 'react', 'webpack'],
+            tags: ["html", 'css', 'javascript',"redux", 'react', 'webpack'],
             links: {
                 demo: "https://cipher-tech.github.io/movie_app/",
                 repo: "https://github.com/cipher-tech/movie_app",
@@ -212,6 +236,19 @@ function Works(props) {
             previews: [movieAppImage1, movieAppImage2, movieAppImage3]
         },
         {
+            title: "Animated Check Out Button",
+            text: `A fun side project built HTML and css alone. Aimed at improving, displaying and creating cool animations with css alone,
+                no javascript, libraries or frameworks included.`,
+            tags: ["html", 'css', 'javascript', 'react',"redux",'webpack'],
+            links: {
+                demo: "https://github.com/cipher-tech/animated_check_out_button",
+                repo: "https://cipher-tech.github.io/animated_check_out_button/",
+            },
+            image: animatedCheckOut1,
+            previews: [animatedCheckOut1, animatedCheckOut2, animatedCheckOut3]
+        },
+       
+        {
             title: "Coin App Backend",
             text: `The server side backend code that powers the Coin app, is a fast API based system built on top of
                 Laravel and utilizes a MySql database. It was built with security in mind and includes features such as 
@@ -219,11 +256,24 @@ function Works(props) {
             `,
             tags: ["php", 'apache', 'laravel', 'mysql', 'webpack'],
             links: {
-                demo: "/",
-                repo: "/",
+                // demo: "/",
+                // repo: "/",
             },
             image: coinAppImage2,
             previews: [coinAppImage2, coinAppImage1, coinAppImage3]
+        },
+        {
+            title: "Dependable Orientals ",
+            text: `Dependable Orientals is a job recruitment web application platform built for Dependable orientals.
+                The platform was built on top of the PHP framework Laravel with it's blade template engine.
+                The app is focused on connect recruiters with job seekers. 
+            `,
+            tags: ["php", 'laravel', 'mysql'],
+            links: {
+                repo: "https://github.com/cipher-tech/dependable-orientals",
+            },
+            // image: coinAppImage2,
+            // previews: [coinAppImage2, coinAppImage1, coinAppImage3]
         },
     ]
     return (

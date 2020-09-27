@@ -14,7 +14,7 @@ let Container = styled.div`
         justify-content: center;
         height: 100%;
         color: ${props => props.theme.colorPrimary};
-        font-size: 2rem;
+        font-size: font-size: ${props => props.theme.font.xxsmall};
         padding: 1rem;
     }
 `

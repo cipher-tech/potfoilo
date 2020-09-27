@@ -30,6 +30,11 @@ let Container = styled.div`
             }
         }
     }
+    h2{
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+    }
     .message{
         font-size: 2rem;
         padding: 2rem 3rem;
@@ -48,6 +53,7 @@ let Container = styled.div`
         color: ${props => props.theme.colorLight};
         cursor: pointer;
         margin: 1rem;
+        display: flex;
         transition: all .5s ease-in-out;
         text-decoration: none;
         &:hover{
@@ -66,7 +72,8 @@ function Contacts() {
             data-aos-duration="400"
             data-aos-easing="ease-in-out"
             data-aos-once="true">
-            <div className="stats">
+
+            {/* <div className="stats"> */}
                 {/* <p>10 
                 <br/>
                     <span>Projects</span>
@@ -88,10 +95,10 @@ function Contacts() {
                     </span>
                 </p> */}
 
-            </div>
+            {/* </div> */}
             <h2>
                 WOW HOO!!!
-                </h2>
+            </h2>
             <p className="contact-msg">
                 Look who's here.
                     <br />

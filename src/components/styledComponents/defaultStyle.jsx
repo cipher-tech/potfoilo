@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 80%; 
     }
     @media only screen and (max-width: ${props => props.theme.breakPoints.bpLarge}) {
-      font-size: 50%; 
+      font-size: 55%; 
     }
   }
   body {

@@ -347,11 +347,11 @@ function About(props) {
                             <img src={facebookSvg} alt="facebookSvg" />
                         </a>
                     </li>
-                    <li className="aboutMeSocial-icons">
+                    {/* <li className="aboutMeSocial-icons">
                         <a href="https://www.instagram.com/chibuikem_nick/?hl=en">
                             <img src={instagramSvg} alt="instagramSvg" />
                         </a>
-                    </li>
+                    </li> */}
                     <li className="aboutMeSocial-icons">
                         <a href="https://www.linkedin.com/in/nick-chibuikem-883711159/">
                             <img src={linkedinSvg} alt="linkedinSvg" />

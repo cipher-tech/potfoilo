@@ -10,7 +10,7 @@ const Container = styled.div`
         display: grid;
         /* grid-column: 1/-1; */
         /* width: 33.3333%; */
-        box-shadow: 0.3rem 0.3rem .7rem #ece7e773,
+        box-shadow: 0.3rem 0.3rem .7rem #ffffff26,
                 -0.3rem -0.3rem .7rem rgba(94,104,121, .288);
         grid-template-columns: 1fr;
         justify-self: center;
@@ -46,11 +46,11 @@ const Container = styled.div`
             color: ${props => props.theme.colorPrimary}
         }
         &--tools{
-            /* width: 80%; */
+            width: 70%;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
-            padding:2rem;
+            padding: 1rem;
             text-transform: capitalize;
 
             &-item{
