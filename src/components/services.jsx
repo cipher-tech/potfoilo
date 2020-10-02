@@ -113,7 +113,7 @@ function Services() {
             title: "Front-End ",
             content: `i enjoy building project from scratch 
                 and make designs come alive using clean code.`,
-            subtitle: "Languages Stack",
+            subtitle: "Language Stack",
             stack: "HTML, SCSS, JavaScript, Typescript, React, NextJs.",
             subtitle2: "Design Tools:",
             tools: ["VsCode",

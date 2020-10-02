@@ -212,7 +212,7 @@ function Works(props) {
             title: "Coin App",
             text: ` A crypto-currency web app built for CJGrandExchange company and also serves as their official website,
                 enables users trade various crypto-currencies and giftcards  easily across various african countries. 
-                features include: PWA, automatic currency conversion, intuitive user dashboard, user authentication etc.
+                Features include: PWA, automatic currency conversion, intuitive user dashboard, user authentication etc.
             `,
             tags: ["html", 'css', 'javascript', 'react',"redux",'webpack'],
             links: {
@@ -224,7 +224,7 @@ function Works(props) {
         },
         {
             title: "Movie App",
-            text: ` A concept movie streaming app, it enables users view details of top rated movies including, the details include:
+            text: ` A concept movie streaming app, it enables users view details of top rated movies including the details,
                 popular actors and date of release. Movie app was built on top React and Redux. 
             `,
             tags: ["html", 'css', 'javascript',"redux", 'react', 'webpack'],
@@ -239,7 +239,7 @@ function Works(props) {
             title: "Animated Check Out Button",
             text: `A fun side project built HTML and css alone. Aimed at improving, displaying and creating cool animations with css alone,
                 no javascript, libraries or frameworks included.`,
-            tags: ["html", 'css', 'javascript', 'react',"redux",'webpack'],
+            tags: ["html", 'css', "SCSS"],
             links: {
                 demo: "https://github.com/cipher-tech/animated_check_out_button",
                 repo: "https://cipher-tech.github.io/animated_check_out_button/",
@@ -250,7 +250,7 @@ function Works(props) {
        
         {
             title: "Coin App Backend",
-            text: `The server side backend code that powers the Coin app, is a fast API based system built on top of
+            text: `The server side backend code that powers the Coin app, It's a fast API based system built on top of
                 Laravel and utilizes a MySql database. It was built with security in mind and includes features such as 
                 support for email push notification, user authentication and validation.
             `,
@@ -264,9 +264,9 @@ function Works(props) {
         },
         {
             title: "Dependable Orientals ",
-            text: `Dependable Orientals is a job recruitment web application platform built for Dependable orientals.
+            text: `Dependable Orientals is a job recruitment web application platform built for Dependable orientals Ltd.
                 The platform was built on top of the PHP framework Laravel with it's blade template engine.
-                The app is focused on connect recruiters with job seekers. 
+                The app is focused on connecting recruiters with job seekers. 
             `,
             tags: ["php", 'laravel', 'mysql'],
             links: {

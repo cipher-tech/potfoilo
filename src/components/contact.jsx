@@ -10,7 +10,7 @@ let Container = styled.div`
     align-items: center;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    background-image: linear-gradient(to bottom, rgba(47,137,252, .6) 100%, rgba(47,137,252, .6)), url('${bg1}');
+    background-image: linear-gradient(to bottom, rgba(50 47 85 / 78%) 100%, rgba(47,137,252, .6)), url('${bg1}');
     background-repeat: no-repeat;
     background-size: cover;
     color: ${props => props.theme.colorLight};
@@ -101,8 +101,8 @@ function Contacts() {
             </h2>
             <p className="contact-msg">
                 Look who's here.
-                    <br />
-                    You made it this far, you're just one click away from making it all the way.
+                    <br /><br/>
+                    You made it this far, <br/> you're just one click away from making it all the way.
                 </p>
             <div className="message">
                 LET'S WORK TOGETHER!
