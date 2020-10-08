@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/potfoilo/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/potfoilo/static/js/main.741fcf18.chunk.js",
-    "main.js.map": "/potfoilo/static/js/main.741fcf18.chunk.js.map",
+    "main.js": "/potfoilo/static/js/main.30f18054.chunk.js",
+    "main.js.map": "/potfoilo/static/js/main.30f18054.chunk.js.map",
     "runtime-main.js": "/potfoilo/static/js/runtime-main.cbf78d92.js",
     "runtime-main.js.map": "/potfoilo/static/js/runtime-main.cbf78d92.js.map",
     "static/css/2.605bd980.chunk.css": "/potfoilo/static/css/2.605bd980.chunk.css",
     "static/js/2.a6ad48de.chunk.js": "/potfoilo/static/js/2.a6ad48de.chunk.js",
     "static/js/2.a6ad48de.chunk.js.map": "/potfoilo/static/js/2.a6ad48de.chunk.js.map",
     "index.html": "/potfoilo/index.html",
-    "precache-manifest.5124a90445598aedd54196526fed2c53.js": "/potfoilo/precache-manifest.5124a90445598aedd54196526fed2c53.js",
+    "precache-manifest.4768f5ee5c06f2b607362c2871ae6e4a.js": "/potfoilo/precache-manifest.4768f5ee5c06f2b607362c2871ae6e4a.js",
     "service-worker.js": "/potfoilo/service-worker.js",
     "static/css/2.605bd980.chunk.css.map": "/potfoilo/static/css/2.605bd980.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/potfoilo/static/css/main.5ecd60fb.chunk.css.map",
@@ -17,7 +17,7 @@
     "static/media/OnuboguChibuikemResume.pdf": "/potfoilo/static/media/OnuboguChibuikemResume.ccbfdd27.pdf",
     "static/media/XIcon.svg": "/potfoilo/static/media/XIcon.0bbd801f.svg",
     "static/media/aboutMeCurve.svg": "/potfoilo/static/media/aboutMeCurve.71ad6429.svg",
-    "static/media/aboutPic.JPG": "/potfoilo/static/media/aboutPic.f8720d19.JPG",
+    "static/media/aboutPic.JPG": "/potfoilo/static/media/aboutPic.a34f90c4.JPG",
     "static/media/adobe-xd.svg": "/potfoilo/static/media/adobe-xd.10baff4c.svg",
     "static/media/apollo-graphql-1.svg": "/potfoilo/static/media/apollo-graphql-1.9086960b.svg",
     "static/media/avatar1.jpg": "/potfoilo/static/media/avatar1.9acd921d.jpg",
@@ -75,6 +75,6 @@
     "static/css/2.605bd980.chunk.css",
     "static/js/2.a6ad48de.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.741fcf18.chunk.js"
+    "static/js/main.30f18054.chunk.js"
   ]
 }

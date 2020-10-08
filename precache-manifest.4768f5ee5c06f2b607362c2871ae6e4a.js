@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb46e881fa343bce7b668e5243298b90",
+    "revision": "2e7813c4fa0f9aed8679b6e017e67fde",
     "url": "/potfoilo/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/potfoilo/static/css/2.605bd980.chunk.css"
   },
   {
-    "revision": "d5b1bf4288869bb11abc",
+    "revision": "5d9099ccf5f19f840f99",
     "url": "/potfoilo/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/potfoilo/static/js/2.a6ad48de.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d5b1bf4288869bb11abc",
-    "url": "/potfoilo/static/js/main.741fcf18.chunk.js"
+    "revision": "5d9099ccf5f19f840f99",
+    "url": "/potfoilo/static/js/main.30f18054.chunk.js"
   },
   {
     "revision": "be386dae6c0b7dade5b7",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/potfoilo/static/media/aboutMeCurve.71ad6429.svg"
   },
   {
-    "revision": "f8720d192e614e87a7049659f2180188",
-    "url": "/potfoilo/static/media/aboutPic.f8720d19.JPG"
+    "revision": "a34f90c4ec9137ac6cf4f7e2c98391ee",
+    "url": "/potfoilo/static/media/aboutPic.a34f90c4.JPG"
   },
   {
     "revision": "10baff4c898ad2ba358e36ef829d1c60",
