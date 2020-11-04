@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2e7813c4fa0f9aed8679b6e017e67fde",
+    "revision": "bb0ccc743bc861c9060ed75cd93cda27",
     "url": "/potfoilo/index.html"
   },
   {
-    "revision": "4137ff93a1f7134b75dc",
+    "revision": "007a246d0ca05d3adc3c",
     "url": "/potfoilo/static/css/2.605bd980.chunk.css"
   },
   {
-    "revision": "5d9099ccf5f19f840f99",
+    "revision": "0a88d5aed9a8ff5bd494",
     "url": "/potfoilo/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "4137ff93a1f7134b75dc",
-    "url": "/potfoilo/static/js/2.a6ad48de.chunk.js"
+    "revision": "007a246d0ca05d3adc3c",
+    "url": "/potfoilo/static/js/2.1e78a74a.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/potfoilo/static/js/2.a6ad48de.chunk.js.LICENSE.txt"
+    "url": "/potfoilo/static/js/2.1e78a74a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5d9099ccf5f19f840f99",
-    "url": "/potfoilo/static/js/main.30f18054.chunk.js"
+    "revision": "0a88d5aed9a8ff5bd494",
+    "url": "/potfoilo/static/js/main.edba6518.chunk.js"
   },
   {
     "revision": "be386dae6c0b7dade5b7",
     "url": "/potfoilo/static/js/runtime-main.cbf78d92.js"
   },
   {
-    "revision": "ccbfdd27a2ffd04907bdec63a2e5b1a4",
-    "url": "/potfoilo/static/media/OnuboguChibuikemResume.ccbfdd27.pdf"
+    "revision": "e2e047637e7179a18443a0529d63567f",
+    "url": "/potfoilo/static/media/OnuboguChibuikemResume.e2e04763.pdf"
   },
   {
     "revision": "0bbd801f028993242ead7984535d407f",
@@ -38,10 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "71ad6429fd273363603ac9e4fd924949",
     "url": "/potfoilo/static/media/aboutMeCurve.71ad6429.svg"
-  },
-  {
-    "revision": "a34f90c4ec9137ac6cf4f7e2c98391ee",
-    "url": "/potfoilo/static/media/aboutPic.a34f90c4.JPG"
   },
   {
     "revision": "10baff4c898ad2ba358e36ef829d1c60",
@@ -172,6 +168,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/potfoilo/static/media/movieApp3.96d6bdee.png"
   },
   {
+    "revision": "b1f4173b28daf446050d41dbbe8a7c4d",
+    "url": "/potfoilo/static/media/myAvatar.b1f4173b.png"
+  },
+  {
     "revision": "f80a91ba03fbf0e99ea6949aa3a6399e",
     "url": "/potfoilo/static/media/mysql.f80a91ba.svg"
   },
@@ -238,6 +238,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c45f8f67572d820dd6925fae2c39e359",
     "url": "/potfoilo/static/media/twitter.c45f8f67.svg"
+  },
+  {
+    "revision": "3de182d2120823fe49c27eeb1765c53a",
+    "url": "/potfoilo/static/media/typescript.3de182d2.svg"
   },
   {
     "revision": "e03671fcf385f7b01db61038f5b745c3",
