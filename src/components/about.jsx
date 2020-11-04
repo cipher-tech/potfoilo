@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { OffsetText, Triangle, XIcon } from './styledComponents'
 import bgSvg from "../images/aboutMeCurve.svg"
-import aboutPic from "../images/aboutPic.JPG"
+import aboutPic from "../images/myAvatar.png"
 import twitterSvg from "../images/twitter.svg"
 import facebookSvg from "../images/facebook.svg"
 // import instagramSvg from "../images/instagram.svg"

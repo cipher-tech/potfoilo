@@ -27,6 +27,7 @@ import adobeSvg from "../images/svgIcons/adobe-xd.svg"
 import bootstrapSvg from "../images/svgIcons/bootstrap-4.svg"
 import mongooseSvg from "../images/svgIcons/mongoose.svg"
 import materializeSvg from "../images/svgIcons/materialize.svg"
+import typescript from "../images/svgIcons/typescript.svg"
 
 
 let Container = styled.div`
@@ -109,6 +110,14 @@ let Container = styled.div`
 function Skills() {
     const tech_stack = [
         {
+            name: "AdobeXD",
+            icon: adobeSvg
+        },
+        {
+            name: "Invision Studio",
+            icon: invisionStudioSvg
+        },
+        {
             name: "html",
             icon: htmlSvg
         },
@@ -127,14 +136,6 @@ function Skills() {
         {
             name: "SCSS",
             icon: sassSvg
-        },
-        {
-            name: "AdobeXD",
-            icon: adobeSvg
-        },
-        {
-            name: "Invision Studio",
-            icon: invisionStudioSvg
         },
         {
             name: "JavaScript",
@@ -207,6 +208,10 @@ function Skills() {
         {
             name: "Redis",
             icon: redisSvg
+        },
+        {
+            name: "Typescript",
+            icon: typescript
         },
     ]
     return (
