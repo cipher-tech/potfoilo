@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/potfoilo/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/potfoilo/static/js/main.edba6518.chunk.js",
-    "main.js.map": "/potfoilo/static/js/main.edba6518.chunk.js.map",
+    "main.js": "/potfoilo/static/js/main.41134815.chunk.js",
+    "main.js.map": "/potfoilo/static/js/main.41134815.chunk.js.map",
     "runtime-main.js": "/potfoilo/static/js/runtime-main.cbf78d92.js",
     "runtime-main.js.map": "/potfoilo/static/js/runtime-main.cbf78d92.js.map",
     "static/css/2.605bd980.chunk.css": "/potfoilo/static/css/2.605bd980.chunk.css",
-    "static/js/2.1e78a74a.chunk.js": "/potfoilo/static/js/2.1e78a74a.chunk.js",
-    "static/js/2.1e78a74a.chunk.js.map": "/potfoilo/static/js/2.1e78a74a.chunk.js.map",
+    "static/js/2.f816a333.chunk.js": "/potfoilo/static/js/2.f816a333.chunk.js",
+    "static/js/2.f816a333.chunk.js.map": "/potfoilo/static/js/2.f816a333.chunk.js.map",
     "index.html": "/potfoilo/index.html",
-    "precache-manifest.7a117580dd47b6df7f5b6ff36f871ad5.js": "/potfoilo/precache-manifest.7a117580dd47b6df7f5b6ff36f871ad5.js",
+    "precache-manifest.a00b3d645ab43f4c3de50470b223a5be.js": "/potfoilo/precache-manifest.a00b3d645ab43f4c3de50470b223a5be.js",
     "service-worker.js": "/potfoilo/service-worker.js",
     "static/css/2.605bd980.chunk.css.map": "/potfoilo/static/css/2.605bd980.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/potfoilo/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.1e78a74a.chunk.js.LICENSE.txt": "/potfoilo/static/js/2.1e78a74a.chunk.js.LICENSE.txt",
-    "static/media/OnuboguChibuikemResume.pdf": "/potfoilo/static/media/OnuboguChibuikemResume.e2e04763.pdf",
+    "static/js/2.f816a333.chunk.js.LICENSE.txt": "/potfoilo/static/js/2.f816a333.chunk.js.LICENSE.txt",
+    "static/media/OnuboguChibuikemResume.pdf": "/potfoilo/static/media/OnuboguChibuikemResume.15c19175.pdf",
     "static/media/XIcon.svg": "/potfoilo/static/media/XIcon.0bbd801f.svg",
     "static/media/aboutMeCurve.svg": "/potfoilo/static/media/aboutMeCurve.71ad6429.svg",
     "static/media/adobe-xd.svg": "/potfoilo/static/media/adobe-xd.10baff4c.svg",
@@ -43,6 +43,9 @@
     "static/media/linkedin.svg": "/potfoilo/static/media/linkedin.11c59650.svg",
     "static/media/logo.jpg": "/potfoilo/static/media/logo.ea5ed269.jpg",
     "static/media/materialize.svg": "/potfoilo/static/media/materialize.27879f83.svg",
+    "static/media/medng.jpg": "/potfoilo/static/media/medng.d5b52fd6.jpg",
+    "static/media/medng1.png": "/potfoilo/static/media/medng1.d97d2872.png",
+    "static/media/medng2.png": "/potfoilo/static/media/medng2.10ed4457.png",
     "static/media/menu.a0b847dc.svg": "/potfoilo/static/media/menu.a0b847dc.svg",
     "static/media/mongodb.svg": "/potfoilo/static/media/mongodb.2985235d.svg",
     "static/media/mongoose.svg": "/potfoilo/static/media/mongoose.a0244603.svg",
@@ -74,8 +77,8 @@
   "entrypoints": [
     "static/js/runtime-main.cbf78d92.js",
     "static/css/2.605bd980.chunk.css",
-    "static/js/2.1e78a74a.chunk.js",
+    "static/js/2.f816a333.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.edba6518.chunk.js"
+    "static/js/main.41134815.chunk.js"
   ]
 }
