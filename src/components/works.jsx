@@ -5,6 +5,10 @@ import coinAppImage1 from "../images/projectImages/coinApp1.png"
 import coinAppImage2 from "../images/projectImages/coinApp2.png"
 import coinAppImage3 from "../images/projectImages/coinApp3.png"
 
+import medNg from "../images/projectImages/medng.jpg"
+import medNg1 from "../images/projectImages/medng1.png"
+import medNg2 from "../images/projectImages/medng2.png"
+
 import movieAppImage1 from "../images/projectImages/movieApp1.png"
 import movieAppImage2 from "../images/projectImages/movieApp2.png"
 import movieAppImage3 from "../images/projectImages/movieApp3.png"
@@ -196,20 +200,25 @@ function Works(props) {
 
     const Projects = [
         {
-            title: "My Portfolio",
-            text: ` My personal web site built with React, it contains information about me including my various projects
-                and working experience. Also contained in the web site is information about my programming skills like 
-                the various services i render as well as the programming languages and frameworks i use. `,
-            tags: ["html", 'css', 'javascript', 'react',"redux",'webpack'],
+            title: "Medng",
+            role: "front end designer",
+            text: `A mobile app that enables Patients to book appointments, have an eCard, and have access to medical records and test results,
+            -A website (responsive) that enables hospitals and Doctors have access to their database, 
+            and patient history, and also enables patients without the mobile app to access their eCard, 
+            medical records and test results and book appointments.
+            `,
+            tags: ["html", 'css', 'javascript', 'react',"NextJs",'TypeScript'],
             links: {
-                demo: "https://cipher-tech.github.io/potfoilo/",
-                repo: "https://github.com/cipher-tech/potfoilo",
+                demo: "https://blackjack-lilac.vercel.app/",
+                // repo: "https://github.com/cipher-tech/coin-app",
             },
-            image: portfolio1,
-            previews: [portfolio1, portfolio2, portfolio3]
+            image: medNg1,
+            previews: [medNg, medNg1, medNg2]
         },
+        
         {
             title: "Coin App",
+            role: "front end designer",
             text: ` A crypto-currency web app built for CJGrandExchange company and also serves as their official website,
                 enables users trade various crypto-currencies and giftcards  easily across various african countries. 
                 Features include: PWA, automatic currency conversion, intuitive user dashboard, user authentication etc.
@@ -223,33 +232,9 @@ function Works(props) {
             previews: [coinAppImage1, coinAppImage2, coinAppImage3]
         },
         {
-            title: "Movie App",
-            text: ` A concept movie streaming app, it enables users view details of top rated movies including the details,
-                popular actors and date of release. Movie app was built on top React and Redux. 
-            `,
-            tags: ["html", 'css', 'javascript',"redux", 'react', 'webpack'],
-            links: {
-                demo: "https://cipher-tech.github.io/movie_app/",
-                repo: "https://github.com/cipher-tech/movie_app",
-            },
-            image: movieAppImage1,
-            previews: [movieAppImage1, movieAppImage2, movieAppImage3]
-        },
-        {
-            title: "Animated Check Out Button",
-            text: `A fun side project built HTML and css alone. Aimed at improving, displaying and creating cool animations with css alone,
-                no javascript, libraries or frameworks included.`,
-            tags: ["html", 'css', "SCSS"],
-            links: {
-                demo: "https://github.com/cipher-tech/animated_check_out_button",
-                repo: "https://cipher-tech.github.io/animated_check_out_button/",
-            },
-            image: animatedCheckOut1,
-            previews: [animatedCheckOut1, animatedCheckOut2, animatedCheckOut3]
-        },
-       
-        {
             title: "Coin App Backend",
+            role: "back-end designer",
+
             text: `The server side backend code that powers the Coin app, It's a fast API based system built on top of
                 Laravel and utilizes a MySql database. It was built with security in mind and includes features such as 
                 support for email push notification, user authentication and validation.
@@ -263,7 +248,36 @@ function Works(props) {
             previews: [coinAppImage2, coinAppImage1, coinAppImage3]
         },
         {
+            title: "My Portfolio",
+            role: "full stack developer",
+            text: ` My personal web site built with React, it contains information about me including my various projects
+                and working experience. Also contained in the web site is information about my programming skills like 
+                the various services i render as well as the programming languages and frameworks i use. `,
+            tags: ["html", 'css', 'javascript', 'react',"redux",'webpack'],
+            links: {
+                demo: "https://cipher-tech.github.io/potfoilo/",
+                repo: "https://github.com/cipher-tech/potfoilo",
+            },
+            image: portfolio1,
+            previews: [portfolio1, portfolio2, portfolio3]
+        },
+        
+        {
+            title: "Animated Check Out Button",
+            role: "front end designer",
+            text: `A fun side project built HTML and css alone. Aimed at improving, displaying and creating cool animations with css alone,
+                no javascript, libraries or frameworks included.`,
+            tags: ["html", 'css', "SCSS"],
+            links: {
+                demo: "https://cipher-tech.github.io/animated_check_out_button/", 
+                repo: "https://github.com/cipher-tech/animated_check_out_button"
+            },
+            image: animatedCheckOut1,
+            previews: [animatedCheckOut1, animatedCheckOut2, animatedCheckOut3]
+        },
+        {
             title: "Dependable Orientals ",
+            role: "fullstack developer",
             text: `Dependable Orientals is a job recruitment web application platform built for Dependable orientals Ltd.
                 The platform was built on top of the PHP framework Laravel with it's blade template engine.
                 The app is focused on connecting recruiters with job seekers. 
@@ -275,6 +289,21 @@ function Works(props) {
             // image: coinAppImage2,
             // previews: [coinAppImage2, coinAppImage1, coinAppImage3]
         },
+        {
+            title: "Movie App",
+            role: "front end designer",
+            text: ` A concept movie streaming app, it enables users view details of top rated movies including the details,
+                popular actors and date of release. Movie app was built on top React and Redux. 
+            `,
+            tags: ["html", 'css', 'javascript',"redux", 'react', 'webpack'],
+            links: {
+                demo: "https://cipher-tech.github.io/movie_app/",
+                repo: "https://github.com/cipher-tech/movie_app",
+            },
+            image: movieAppImage1,
+            previews: [movieAppImage1, movieAppImage2, movieAppImage3]
+        },
+       
     ]
     return (
         <Container
@@ -302,6 +331,7 @@ function Works(props) {
                                 {item.title}
                             </p>
                             <div className="previews">
+                            
                                 {
                                     item?.previews?.map((preview, index) => (
                                         <img key={index} src={preview} alt="preview" />
@@ -309,6 +339,8 @@ function Works(props) {
                                 }
                             </div>
                             <p className='text'>
+                            <h3 className="project-subheader">Project Stack</h3>
+                            <strong>Role: {item.role}</strong>
                                 {item.text}
                             </p>
                             <h3 className="project-subheader">Project Stack</h3>
