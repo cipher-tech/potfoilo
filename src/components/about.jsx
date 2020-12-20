@@ -290,7 +290,7 @@ function About(props) {
                     Based In Nigeria
                 </p>
                 <p className="aboutMeTxt-main">
-                    I am a skilled programmer that likes writing modular codes that are easily
+                    I am a skilled programmer who likes writing modular codes that are easily
                     maintainable and supports continuous integration.
                     I'm skilled in the art of translating design mock-ups and prototypes
                     from apps like Figma and AdobeXD into responsive full fledged web apps
