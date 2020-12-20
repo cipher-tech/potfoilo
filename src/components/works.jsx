@@ -21,8 +21,8 @@ import animatedCheckOut1 from "../images/projectImages/animatedCheckOut1.png"
 import animatedCheckOut2 from "../images/projectImages/animatedCheckOut2.png"
 import animatedCheckOut3 from "../images/projectImages/animatedCheckOut3.png"
 
-import { ReactComponent as GitSvg} from "../images/svgIcons/gitSvg.svg"
-import { ReactComponent as LinkSvg} from "../images/svgIcons/link.svg"
+import { ReactComponent as GitSvg } from "../images/svgIcons/gitSvg.svg"
+import { ReactComponent as LinkSvg } from "../images/svgIcons/link.svg"
 import "swiper/css/swiper.css"
 import Swiper from "react-id-swiper"
 import { OffsetText, XIcon, Diamond, WorksCard, } from './styledComponents'
@@ -33,6 +33,7 @@ let Container = styled.div`
     /* height: 50vh; */
     /* padding: 2rem; */
     margin-bottom: 2rem;
+    padding: 1rem;
     /* -webkit-box-reflect: below .1rem linear-gradient(tranparent,tranparent,
     rgba(0,0,0, .2) ); */
 
@@ -81,7 +82,7 @@ let Container = styled.div`
     }
     .swiper-wrapper{ 
         /* height: 50rem; */
-        margin: 1rem 2rem;
+        margin: 1rem 1rem;
         max-width: 36rem;
         @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
             max-width: 33rem;
@@ -185,7 +186,7 @@ function Works(props) {
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: false,
-        slidesPerView: "auto",
+        slidesPerView: "3",
         coverflowEffect: {
             rotate: 50,
             stretch: 0,
@@ -193,9 +194,32 @@ function Works(props) {
             modifier: 1,
             slideShadows: true,
         },
-        // pagination: {
-        //     el: '.swiper-pagination',
-        // }
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: false
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 40
+            },
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            },
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            }
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        }
     }
 
     const Projects = [
@@ -207,7 +231,7 @@ function Works(props) {
             and patient history, and also enables patients without the mobile app to access their eCard, 
             medical records and test results and book appointments.
             `,
-            tags: ["html", 'css', 'javascript', 'react',"NextJs",'TypeScript'],
+            tags: ["html", 'css', 'javascript', 'react', "NextJs", 'TypeScript'],
             links: {
                 demo: "https://blackjack-lilac.vercel.app/",
                 // repo: "https://github.com/cipher-tech/coin-app",
@@ -215,7 +239,7 @@ function Works(props) {
             image: medNg1,
             previews: [medNg, medNg1, medNg2]
         },
-        
+
         {
             title: "Coin App",
             role: "front end designer",
@@ -223,7 +247,7 @@ function Works(props) {
                 enables users trade various crypto-currencies and giftcards  easily across various african countries. 
                 Features include: PWA, automatic currency conversion, intuitive user dashboard, user authentication etc.
             `,
-            tags: ["html", 'css', 'javascript', 'react',"redux",'webpack'],
+            tags: ["html", 'css', 'javascript', 'react', "redux", 'webpack'],
             links: {
                 demo: "https://cjgrandexchange.com/",
                 // repo: "https://github.com/cipher-tech/coin-app",
@@ -253,7 +277,7 @@ function Works(props) {
             text: ` My personal web site built with React, it contains information about me including my various projects
                 and working experience. Also contained in the web site is information about my programming skills like 
                 the various services i render as well as the programming languages and frameworks i use. `,
-            tags: ["html", 'css', 'javascript', 'react',"redux",'webpack'],
+            tags: ["html", 'css', 'javascript', 'react', "redux", 'webpack'],
             links: {
                 demo: "https://cipher-tech.github.io/potfoilo/",
                 repo: "https://github.com/cipher-tech/potfoilo",
@@ -261,7 +285,7 @@ function Works(props) {
             image: portfolio1,
             previews: [portfolio1, portfolio2, portfolio3]
         },
-        
+
         {
             title: "Animated Check Out Button",
             role: "front end designer",
@@ -269,7 +293,7 @@ function Works(props) {
                 no javascript, libraries or frameworks included.`,
             tags: ["html", 'css', "SCSS"],
             links: {
-                demo: "https://cipher-tech.github.io/animated_check_out_button/", 
+                demo: "https://cipher-tech.github.io/animated_check_out_button/",
                 repo: "https://github.com/cipher-tech/animated_check_out_button"
             },
             image: animatedCheckOut1,
@@ -295,7 +319,7 @@ function Works(props) {
             text: ` A concept movie streaming app, it enables users view details of top rated movies including the details,
                 popular actors and date of release. Movie app was built on top React and Redux. 
             `,
-            tags: ["html", 'css', 'javascript',"redux", 'react', 'webpack'],
+            tags: ["html", 'css', 'javascript', "redux", 'react', 'webpack'],
             links: {
                 demo: "https://cipher-tech.github.io/movie_app/",
                 repo: "https://github.com/cipher-tech/movie_app",
@@ -303,7 +327,7 @@ function Works(props) {
             image: movieAppImage1,
             previews: [movieAppImage1, movieAppImage2, movieAppImage3]
         },
-       
+
     ]
     return (
         <Container
@@ -331,18 +355,18 @@ function Works(props) {
                                 {item.title}
                             </p>
                             <div className="previews">
-                            
+
                                 {
                                     item?.previews?.map((preview, index) => (
                                         <img key={index} src={preview} alt="preview" />
                                     ))
                                 }
                             </div>
-                            <p className='text'>
-                            <h3 className="project-subheader">Project Stack</h3>
-                            <strong>Role: {item.role}</strong>
+                            <div className='text'>
+                                <h3 className="project-subheader">Project Stack</h3>
+                                <strong>Role: {item.role}</strong>
                                 {item.text}
-                            </p>
+                            </div>
                             <h3 className="project-subheader">Project Stack</h3>
                             <ul className="project-tags">
                                 {
@@ -350,8 +374,8 @@ function Works(props) {
                                 }
                             </ul>
                             <div className="btn-wrapper">
-                                {item.links.repo ? <a href={item.links.repo} className="btn-wrapper__item"> <GitSvg/> </a> : null}
-                                {item.links.demo ? <a href={item.links.demo} className="btn-wrapper__item"> <LinkSvg/> </a> : null}
+                                {item.links.repo ? <a href={item.links.repo} className="btn-wrapper__item"> <GitSvg /> </a> : null}
+                                {item.links.demo ? <a href={item.links.demo} className="btn-wrapper__item"> <LinkSvg /> </a> : null}
                             </div>
                         </WorksCard>
                     ))

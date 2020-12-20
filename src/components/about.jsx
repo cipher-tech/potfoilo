@@ -321,10 +321,10 @@ function About(props) {
                         Freelance: Available
                     </li>
                     <li className="aboutMeTxt-info--items">
-                        experience: 4 years
+                        experience: 4+ years
                     </li>
                     <li className="aboutMeTxt-info--items">
-                        Location: Nigeria
+                        Location: Lagos, Nigeria.
                     </li>
                 </ul>
 
