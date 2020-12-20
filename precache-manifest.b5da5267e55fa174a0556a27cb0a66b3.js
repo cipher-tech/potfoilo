@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ce36af50e078e46e546119640725f4b",
+    "revision": "2f1f0b2d000c57fdd6acb5c7aade1092",
     "url": "/potfoilo/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/potfoilo/static/css/2.605bd980.chunk.css"
   },
   {
-    "revision": "e19e4c890b892c415f39",
+    "revision": "0717aaadcbd893075619",
     "url": "/potfoilo/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,16 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/potfoilo/static/js/2.f816a333.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e19e4c890b892c415f39",
-    "url": "/potfoilo/static/js/main.41134815.chunk.js"
+    "revision": "0717aaadcbd893075619",
+    "url": "/potfoilo/static/js/main.8551d4b5.chunk.js"
   },
   {
     "revision": "be386dae6c0b7dade5b7",
     "url": "/potfoilo/static/js/runtime-main.cbf78d92.js"
   },
   {
-    "revision": "15c1917557be6a653298c41582dd2c85",
-    "url": "/potfoilo/static/media/OnuboguChibuikemResume.15c19175.pdf"
+    "revision": "07910b409842084d8b09a35ff75d7bb1",
+    "url": "/potfoilo/static/media/OnuboguChibuikemResume.07910b40.pdf"
   },
   {
     "revision": "0bbd801f028993242ead7984535d407f",
