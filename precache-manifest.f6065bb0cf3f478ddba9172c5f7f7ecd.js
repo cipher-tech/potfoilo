@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f452e3e0fae35b2dc0db36f0352a6206",
+    "revision": "e2297455c9026a7384a739eae9ba68bd",
     "url": "/potfoilo/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/potfoilo/static/css/2.605bd980.chunk.css"
   },
   {
-    "revision": "0c26fdbfef6ebbebc06c",
+    "revision": "a09079c3471a25d581fd",
     "url": "/potfoilo/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/potfoilo/static/js/2.f816a333.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0c26fdbfef6ebbebc06c",
-    "url": "/potfoilo/static/js/main.810949e7.chunk.js"
+    "revision": "a09079c3471a25d581fd",
+    "url": "/potfoilo/static/js/main.5c747828.chunk.js"
   },
   {
     "revision": "be386dae6c0b7dade5b7",
