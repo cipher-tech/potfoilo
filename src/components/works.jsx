@@ -363,7 +363,7 @@ function Works(props) {
                                 }
                             </div>
                             <div className='text'>
-                                <h3 className="project-subheader">Project Stack</h3>
+                                {/* <h3 className="project-subheader">Project Stack</h3> */}
                                 <strong>Role: {item.role}</strong>
                                 {item.text}
                             </div>
