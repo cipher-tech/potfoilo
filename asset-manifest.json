@@ -1,23 +1,26 @@
 {
   "files": {
     "main.css": "/potfoilo/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/potfoilo/static/js/main.62012b22.chunk.js",
-    "main.js.map": "/potfoilo/static/js/main.62012b22.chunk.js.map",
+    "main.js": "/potfoilo/static/js/main.1cacd7f4.chunk.js",
+    "main.js.map": "/potfoilo/static/js/main.1cacd7f4.chunk.js.map",
     "runtime-main.js": "/potfoilo/static/js/runtime-main.cbf78d92.js",
     "runtime-main.js.map": "/potfoilo/static/js/runtime-main.cbf78d92.js.map",
     "static/css/2.605bd980.chunk.css": "/potfoilo/static/css/2.605bd980.chunk.css",
-    "static/js/2.f816a333.chunk.js": "/potfoilo/static/js/2.f816a333.chunk.js",
-    "static/js/2.f816a333.chunk.js.map": "/potfoilo/static/js/2.f816a333.chunk.js.map",
+    "static/js/2.621da960.chunk.js": "/potfoilo/static/js/2.621da960.chunk.js",
+    "static/js/2.621da960.chunk.js.map": "/potfoilo/static/js/2.621da960.chunk.js.map",
     "index.html": "/potfoilo/index.html",
-    "precache-manifest.ed62d3aa250abd5110243e68dcff67c0.js": "/potfoilo/precache-manifest.ed62d3aa250abd5110243e68dcff67c0.js",
+    "precache-manifest.ceb36763a83869e5ac153555a4e9015d.js": "/potfoilo/precache-manifest.ceb36763a83869e5ac153555a4e9015d.js",
     "service-worker.js": "/potfoilo/service-worker.js",
     "static/css/2.605bd980.chunk.css.map": "/potfoilo/static/css/2.605bd980.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/potfoilo/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.f816a333.chunk.js.LICENSE.txt": "/potfoilo/static/js/2.f816a333.chunk.js.LICENSE.txt",
+    "static/js/2.621da960.chunk.js.LICENSE.txt": "/potfoilo/static/js/2.621da960.chunk.js.LICENSE.txt",
     "static/media/OnuboguChibuikemResume.pdf": "/potfoilo/static/media/OnuboguChibuikemResume.07910b40.pdf",
     "static/media/XIcon.svg": "/potfoilo/static/media/XIcon.0bbd801f.svg",
     "static/media/aboutMeCurve.svg": "/potfoilo/static/media/aboutMeCurve.71ad6429.svg",
     "static/media/adobe-xd.svg": "/potfoilo/static/media/adobe-xd.10baff4c.svg",
+    "static/media/afriLearn.png": "/potfoilo/static/media/afriLearn.91668620.png",
+    "static/media/afriLearn2.png": "/potfoilo/static/media/afriLearn2.76265bc1.png",
+    "static/media/afriLearn3.png": "/potfoilo/static/media/afriLearn3.ba06bfcc.png",
     "static/media/apollo-graphql-1.svg": "/potfoilo/static/media/apollo-graphql-1.9086960b.svg",
     "static/media/avatar1.jpg": "/potfoilo/static/media/avatar1.9acd921d.jpg",
     "static/media/bootstrap-4.svg": "/potfoilo/static/media/bootstrap-4.ffded238.svg",
@@ -77,8 +80,8 @@
   "entrypoints": [
     "static/js/runtime-main.cbf78d92.js",
     "static/css/2.605bd980.chunk.css",
-    "static/js/2.f816a333.chunk.js",
+    "static/js/2.621da960.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.62012b22.chunk.js"
+    "static/js/main.1cacd7f4.chunk.js"
   ]
 }
