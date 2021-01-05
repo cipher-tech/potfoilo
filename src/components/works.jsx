@@ -9,6 +9,10 @@ import medNg from "../images/projectImages/medng.jpg"
 import medNg1 from "../images/projectImages/medng1.png"
 import medNg2 from "../images/projectImages/medng2.png"
 
+import afriLearn from "../images/projectImages/afriLearn.png"
+import afriLearn2 from "../images/projectImages/afriLearn2.png"
+import afriLearn3 from "../images/projectImages/afriLearn3.png"
+
 import movieAppImage1 from "../images/projectImages/movieApp1.png"
 import movieAppImage2 from "../images/projectImages/movieApp2.png"
 import movieAppImage3 from "../images/projectImages/movieApp3.png"
@@ -263,13 +267,28 @@ function Works(props) {
                 Laravel and utilizes a MySql database. It was built with security in mind and includes features such as 
                 support for email push notification, user authentication and validation.
             `,
-            tags: ["php", 'apache', 'laravel', 'mysql', 'webpack'],
+            tags: ["php", 'apache', 'laravel', 'mysql',],
             links: {
                 // demo: "/",
                 // repo: "/",
             },
             image: coinAppImage2,
             previews: [coinAppImage2, coinAppImage1, coinAppImage3]
+        },
+        {
+            title: "Afrilearn",
+            role: "Front-End Developer",
+            text: `A concept landing page for Afrilearn, An e-learning platform actively leverages a network of high-quality teachers, animators, and 
+            developers to provide affordable, world-class education for Africans, anywhere.
+            It was built with NextJs and TypeScript, and supports server side rendering and PWA.
+            `,
+            tags: ["html", 'css', 'javascript', 'react', "NextJs", 'TypeScript', "PWA"],
+            links: {
+                demo: "https://e-learning-pi.vercel.app/",
+                repo: "https://github.com/cipher-tech/E-learning/",
+            },
+            image: afriLearn,
+            previews: [afriLearn, afriLearn2, afriLearn3]
         },
         {
             title: "My Portfolio",
