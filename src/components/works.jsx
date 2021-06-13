@@ -21,6 +21,18 @@ import portfolio1 from "../images/projectImages/portfolio1.png"
 import portfolio2 from "../images/projectImages/portfolio2.png"
 import portfolio3 from "../images/projectImages/portfolio3.png"
 
+import kafene1 from "../images/projectImages/kafene1.png"
+import kafene2 from "../images/projectImages/kafene2.png"
+import kafene3 from "../images/projectImages/kafene3.png"
+
+import lcc1 from "../images/projectImages/lcc1.png"
+import lcc2 from "../images/projectImages/lcc2.png"
+import lcc3 from "../images/projectImages/lcc3.png"
+
+import stJames1 from "../images/projectImages/stjames1.png"
+import stJames2 from "../images/projectImages/stjames2.png"
+import stJames3 from "../images/projectImages/stjames3.png"
+
 import animatedCheckOut1 from "../images/projectImages/animatedCheckOut1.png"
 import animatedCheckOut2 from "../images/projectImages/animatedCheckOut2.png"
 import animatedCheckOut3 from "../images/projectImages/animatedCheckOut3.png"
@@ -28,7 +40,7 @@ import animatedCheckOut3 from "../images/projectImages/animatedCheckOut3.png"
 import { ReactComponent as GitSvg } from "../images/svgIcons/gitSvg.svg"
 import { ReactComponent as LinkSvg } from "../images/svgIcons/link.svg"
 import "swiper/css/swiper.css"
-import Swiper from "react-id-swiper"
+// import Swiper from "react-id-swiper"
 import { OffsetText, XIcon, Diamond, WorksCard, } from './styledComponents'
 
 let Container = styled.div`
@@ -86,11 +98,15 @@ let Container = styled.div`
     }
     .swiper-wrapper{ 
         /* height: 50rem; */
-        margin: 1rem 1rem;
-        max-width: 36rem;
-        @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 2rem 1.5rem;
+        margin: 2rem 0rem;
+        height: auto;
+        /* max-width: 36rem; */
+        /* @media only screen and (max-width: ${props => props.theme.breakPoints.bpSmall}) {
             max-width: 33rem;
-        }
+        } */
         .previews{
             display: grid;
             place-items: center;
@@ -165,6 +181,11 @@ let Container = styled.div`
                 text-decoration: none;
                 color: ${props => props.theme.colorLight};
                 font-size: ${props => props.theme.font.xxsmall};
+                display: flex;
+                align-items: center;
+                &--svg{
+                    margin-right: .5rem;
+                }
                 path, svg{
                     fill: currentColor;
                     height: 3rem;
@@ -198,10 +219,10 @@ function Works(props) {
             modifier: 1,
             slideShadows: true,
         },
-        autoplay: {
-            delay: 4500,
-            disableOnInteraction: false
-        },
+        // autoplay: {
+        //     delay: 4500,
+        //     disableOnInteraction: false
+        // },
         breakpoints: {
             1024: {
                 slidesPerView: 2,
@@ -227,6 +248,53 @@ function Works(props) {
     }
 
     const Projects = [
+        {
+            title: "Kafene",
+            role: "Backend Web Developer",
+            text: `Kafene, is a mission driven fintech company with the goal of empowering flexible ownership solutions. 
+                Our best in class technology brings innovative point of sale financing to industries like furniture, appliances, 
+                and electronics. I currently work as a backend developer with a team of developers to make Kafene a better platform.
+            `,
+            tags: ["NodeJs", 'Express', 'Jira', 'Git', "PostgreSQL", 'Testing'],
+            links: {
+                demo: "https://kafene.com/",
+                // repo: "https://github.com/cipher-tech/coin-app",
+            },
+            image: kafene1,
+            previews: [kafene1, kafene2, kafene3]
+        },
+        {
+            title: "St. James Hospital",
+            role: "Web Developer",
+            text: `St James Clinic/Hospital and maternity is a fully operational, Client Specific, 
+                Family oriented General practice Hospital, established in January 2000 and located at no 69 wilmer Crescent Olodi- Apapa, 
+                Lagos. I built the official website of the St James Clinic/Hospital and maternity using a mix of 
+                NextJs, Typescript and other 3rd party software specifically to the clients taste and satisfaction.
+            `,
+            tags: ["html", 'css', 'javascript', 'react', "NextJs", 'TypeScript'],
+            links: {
+                demo: "https://stjameshospitalng.com/",
+                // repo: "https://github.com/cipher-tech/coin-app",
+            },
+            image: stJames1,
+            previews: [stJames1, stJames2, stJames3]
+        },
+        {
+            title: "Lagos State Country Club",
+            role: "Fullstack Web Developer",
+            text: `Lagos Country Club is a private, family country club devoted to the social well- being of it's members.
+                Founded in 1949, LCC maintains an excellent multi-sports history and is located in Ikeja, Lagos.
+                Worked as a senior fullstack web developer for AKI Solutions and built the entire 
+                user dashboard, admin dashboard and the entire back-end of the official website of the Lagos State Country Club.
+            `,
+            tags: ["html", 'css', 'javascript', 'react', "PHP", 'Laravel', "MySQL"],
+            links: {
+                demo: "https://lagoscountryclub.net/",
+                // repo: "https://github.com/cipher-tech/coin-app",
+            },
+            image: lcc3,
+            previews: [lcc1, lcc2, lcc3]
+        },
         {
             title: "Medng",
             role: "front end designer",
@@ -359,14 +427,14 @@ function Works(props) {
             data-aos-once="true">
             <OffsetText className="projects-title" offset="Projects" >
                 Projects
-            <div className="projects-title--SvgIcon">
+                <div className="projects-title--SvgIcon">
                     <XIcon />
                 </div>
                 <div className="projects-title--SvgXIcon">
                     <Diamond />
                 </div>
             </OffsetText>
-            <Swiper {...params} className="swiper-wrapper">
+            <div className="swiper-wrapper">
                 {
                     Projects.map((item, index) => (
                         <WorksCard key={index} img={item.image}>
@@ -393,13 +461,17 @@ function Works(props) {
                                 }
                             </ul>
                             <div className="btn-wrapper">
-                                {item.links.repo ? <a href={item.links.repo} className="btn-wrapper__item"> <GitSvg /> </a> : null}
-                                {item.links.demo ? <a href={item.links.demo} className="btn-wrapper__item"> <LinkSvg /> </a> : null}
+                                {item.links.repo ? <a href={item.links.repo} className="btn-wrapper__item">
+                                    <GitSvg className="btn-wrapper__item--svg" /> Link to repo
+                                </a> : null}
+                                {item.links.demo ? <a href={item.links.demo} className="btn-wrapper__item">
+                                    <LinkSvg className="btn-wrapper__item--svg" /> Link to demo
+                                </a> : null}
                             </div>
                         </WorksCard>
                     ))
                 }
-            </Swiper>
+            </div>
         </Container>
     )
 }

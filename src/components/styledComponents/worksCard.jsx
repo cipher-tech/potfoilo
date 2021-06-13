@@ -9,7 +9,7 @@ const Container = styled.div`
     justify-content: center;
     align-content: center;
     /* align-items: center; */
-    background-image: linear-gradient(to right bottom, rgba(0,0,0, .8),rgba(0,0,0, .8)), 
+    background-image: linear-gradient(to right bottom,rgb(0 0 0 / 97%),rgb(0 0 0 / 87%)), 
         url(${props => props.img});
     background-size: cover;
     background-repeat: no-repeat;
