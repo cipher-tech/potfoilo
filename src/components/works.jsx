@@ -295,22 +295,22 @@ function Works(props) {
             image: lcc3,
             previews: [lcc1, lcc2, lcc3]
         },
-        {
-            title: "Medng",
-            role: "front end designer",
-            text: `A mobile app that enables Patients to book appointments, have an eCard, and have access to medical records and test results,
-            -A website (responsive) that enables hospitals and Doctors have access to their database, 
-            and patient history, and also enables patients without the mobile app to access their eCard, 
-            medical records and test results and book appointments.
-            `,
-            tags: ["html", 'css', 'javascript', 'react', "NextJs", 'TypeScript'],
-            links: {
-                demo: "https://blackjack-lilac.vercel.app/",
-                // repo: "https://github.com/cipher-tech/coin-app",
-            },
-            image: medNg1,
-            previews: [medNg, medNg1, medNg2]
-        },
+        // {
+        //     title: "Medng",
+        //     role: "front end designer",
+        //     text: `A mobile app that enables Patients to book appointments, have an eCard, and have access to medical records and test results,
+        //     -A website (responsive) that enables hospitals and Doctors have access to their database, 
+        //     and patient history, and also enables patients without the mobile app to access their eCard, 
+        //     medical records and test results and book appointments.
+        //     `,
+        //     tags: ["html", 'css', 'javascript', 'react', "NextJs", 'TypeScript'],
+        //     links: {
+        //         demo: "https://blackjack-lilac.vercel.app/",
+        //         // repo: "https://github.com/cipher-tech/coin-app",
+        //     },
+        //     image: medNg1,
+        //     previews: [medNg, medNg1, medNg2]
+        // },
 
         {
             title: "Coin App",
